@@ -1,0 +1,96 @@
+/**
+ * --------------------------------
+ * Common CSS
+ * --------------------------------
+ */
+ @font-face {
+     font-family: 'NanumSquare';
+     font-style: normal;
+     font-weight: 400;
+     src: local('NanumSquareL'),
+     url('/pjtCom/fonts/NanumSquareL.eot'),
+     url('/pjtCom/fonts/NanumSquareL.eot?#iefix') format('embedded-opentype'),
+     url('/pjtCom/fonts/NanumSquareL.woff') format('woff');
+ }
+
+ @font-face {
+     font-family: 'NanumSquare';
+     font-style: normal;
+     font-weight: 500;
+     src: local('NanumSquareR'),
+     url('/pjtCom/fonts/NanumSquareR.eot'),
+     url('/pjtCom/fonts/NanumSquareR.eot?#iefix') format('embedded-opentype'),
+     url('/pjtCom/fonts/NanumSquareR.woff') format('woff');
+ }
+
+ @font-face {
+     font-family: 'NanumSquare';
+     font-style: normal;
+     font-weight: 600;
+     src: local('NanumSquareEB'),
+     url('/pjtCom/fonts/NanumSquareEB.eot'),
+     url('/pjtCom/fonts/NanumSquareEB.eot?#iefix') format('embedded-opentype'),
+     url('/pjtCom/fonts/NanumSquareEB.woff') format('woff');
+ }
+
+html, body { min-height:100%; height:100%; }
+html { font-family:'NanumSquare', sans-serif; font-weight:500; font-size:16px; letter-spacing:-0.04em; line-height:1; color:#555; word-break:keep-all; word-wrap:break-word; }
+h1,h2,h3,h4,h5,h6 { margin:0; }
+ul, ol { list-style:none; margin:0; padding:0; }
+fieldset { margin:0; padding:0; border:none; }
+textarea { resize:none; }
+button { font-family:'NanumSquare', sans-serif; cursor:pointer; padding:0; border:none; }
+a { text-decoration:none; color:#555; }
+p { margin:0; }
+em { font-style:normal; }
+table { table-layout:fixed; width:100%; border-collapse:collapse; border-spacing:0; }
+th { padding:0; }
+td { padding:0; }
+input { padding:0; box-sizing:border-box; }
+dl, dd { margin:0; }
+figure { margin:0; }
+img { vertical-align:top; }
+hr { display:none; }
+address { font-style:normal; }
+legend { position:absolute; left:-9999px; }
+caption { position:absolute; left:-9999px; }
+[type=file] { cursor:pointer; }
+.hide { position:absolute; left:-9999px; }
+
+/* skip */
+.skip a { display:flex;position:absolute; z-index:9999; top:-35px; width:100%; height:33px; font-size:15px; line-height:33px; font-weight:bold; letter-spacing:-2px; text-align:center; text-decoration:none; background:#ffffff; opacity:0.9; }
+.skip a:focus { top:0; }
+.skip a:hover { letter-spacing:-1px; }
+
+
+
+
+
+
+/**
+* header
+* --------------------------------
+*/
+#header { height:50px; margin-bottom:-51px; }
+#header > .inner { position:fixed; z-index:9; width:100%; height:50px; text-align:center; border-bottom:1px solid #e5e5e5; }
+#header > .inner:after { content:""; display:block; clear:both; }
+
+
+
+/**
+* wrap
+* --------------------------------
+*/
+#wrap { min-height:100%; }
+#contents { padding:50px 0 355px; box-sizing:border-box; }
+#contents > div { padding:30px 0 60px; }
+
+
+
+/**t
+* footer
+* --------------------------------
+*/
+#footer { position:relative; height:355px; font-family:'Malgun Gothic', sans-serif; text-align:center; margin-top:-355px; box-sizing:border-box; background:#f6f6f6;}
+#footer .inner { position:relative; height:100%; margin:0 auto; box-sizing:border-box; }
+#footer .inner:before { content:""; position:absolute; top:40; left:50px; width:89px; height:34px; background:url(/pjtCom/images/common/logo.png) no-repeat 0 -84px; }
