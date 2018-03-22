@@ -1,7 +1,7 @@
 <%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
 
 <%
-path1dir="mypage"
+path1dir="member"
 path2dir="password_update"
 path3dir=""
 path1tit="마이페이지"

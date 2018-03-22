@@ -1,11 +1,11 @@
 <%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
 
 <%
-path1dir="mypage"
-path2dir="searchid"
+path1dir="member"
+path2dir="joinuser"
 path3dir=""
-path1tit="마이페이지"
-path2tit="아이디 찾기"
+path1tit="회원가입"
+path2tit="회원가입"
 path3tit=""
 description = "ServeQ "
 If path3tit = "" Then description=description+path2tit Else description=description+path3tit End If

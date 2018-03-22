@@ -11,11 +11,11 @@ var fn = (function() {
         scroll : function(state){
             switch (state) {
                 case 'enabled' :
-                    $(window).off('scroll touchmove mousewheel');
+                    $(window).off('touchmove');
                 break;
 
                 case 'disabled' :
-                    $(window).on('scroll touchmove mousewheel', function(e) {
+                    $(window).on('touchmove', function(e) {
                         e.preventDefault();
                         return false;
                     });

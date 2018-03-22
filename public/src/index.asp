@@ -33,7 +33,7 @@ If path3tit = "" Then description=description+path2tit Else description=descript
 	<main id="wrap" class="<%= path1dir %>">
 		<div id="contents" class="<%= path2dir %>">
 			<div class="<%= path3dir %>">
-			MAIN
+				<img src="/pjtCom/images/main/img_visual1.jpg" alt="">
 			</div>
 		</div>
 	</main>
