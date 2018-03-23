@@ -102,6 +102,8 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 	<script charset="UTF-8">
 		function mapLoc(){
 			$('.root_daum_roughmap').each(function(){
+				var pw = $(this).closest('.map').width();
+				var ph = $(this).closest('.map').height();
 				var x = $(this).attr('id');
 				var dk = $(this).attr('data-key');
 				var dh = $(this).attr('data-height');
@@ -109,12 +111,19 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 				//console.log(x,dk,dh);
 				new daum.roughmap.Lander({
 					"timestamp" : x,
-					"key" : dk
+					"key" : dk,
+					"mapWidth" : pw,
+					"mapHeight" : ph
 				}).render();
 			});
 		}
 		$(document).ready(function(){
 			mapLoc();
+			$(window).resize(function(){
+				$('.root_daum_roughmap').each(function(){
+					$(this).css({'width':$(window).width()-40,'height':($(window).width()-40)*0.65625});
+				});
+			});
 		});
 	</script>
 	<!-- // script -->
