@@ -43,13 +43,15 @@
 .member .login .logbox a { display:inline-block; font-size:12px; line-height:21px; vertical-align:top; }
 .member .login .logbox .bar { display:inline-block; width:1px; height:16px; vertical-align:top; margin:4px 15px 0; background:#e4e4e4; }
 .member .login .btnbox { margin-top:37px; }
-.member .login .btnbox a { display:block; position:relative;  font-size:16px; height:45px; }
+.member .login .btnbox a { display:block; position:relative; font-size:16px; height:45px; }
 .member .login .btnbox a:before { content:""; position:absolute; left:30px; top:50%; transform:translateY(-50%); width:26px; height:26px; background:url('/pjtCom/images/common/icon_form.png') no-repeat 0 0; background-size:100px; }
 .member .login .btnbox .btn_login { color:#fff; background:#ce462d; }
 .member .login .btnbox .btn_naver { margin-top:18px; color:#231f20; border:1px solid #ebebeb; }
 .member .login .btnbox .btn_login:before { background-position:0 -71px; }
 .member .login .btnbox .btn_naver:before { background-position:-31px -71px; }
-.member .login .txt {  font-size:12px; text-align:center; color:#555555; margin-top:17px; }
+.member .login .btnbox2 { margin-top:30px; padding-top:30px; border-top:1px solid #e4e4e4; }
+.member .login .btnbox2 .btn_join { width:100%; font-size:16px; height:45px; color:#fff; background:#807e7f; }
+.member .login .txt { font-size:12px; text-align:center; color:#555555; margin-top:17px; }
 .member .login .error1 .error_id,
 .member .login .error2 .error_pw,
 .member .login .error3 .error_idpw { display:block; }
