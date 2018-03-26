@@ -36,7 +36,23 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 	<main id="wrap" class="<%= path1dir %>">
 		<div id="contents" class="<%= path2dir %>">
 			<div class="<%= path3dir %>">
-				SUB
+				<h2 class="tit">회원가입</h2>
+				<p class="desc">Best Solution을 찾으러 오셨나요? 환영합니다!</p>
+
+				<ol class="join_process">
+					<li>약관동의</li>
+					<li>회원정보입력</li>
+					<li class="now">가입완료</li>
+				</ol>
+
+				<div class="txt_area">
+					<div class="inner">
+						<p class="txt1">반갑습니다!<br>회원가입이 완료 되었습니다.</p>
+						<p class="txt2">서브큐의 다양한 서비스를 이용해 보세요! </p>
+					</div>
+				</div>
+
+				<a href="/" class="btn_ok">확인</a>
 			</div>
 		</div>
 	</main>

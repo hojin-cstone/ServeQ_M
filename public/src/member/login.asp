@@ -34,51 +34,53 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 
 	<!-- wrap -->
 	<main id="wrap" class="<%= path1dir %>">
-		<div id="contents" class="<%= path2dir %> <%= path3dir %>">
-			<div class="form_area">
-				<form>
-					<fieldset>
-						<legend class="tit">로그인</legend>
-						<p class="desc">The Best Solution 서브큐, 오늘도 함께 해요!</p>
+		<div id="contents" class="<%= path2dir %>">
+			<div class="<%= path3dir %>">
+				<div class="form_area">
+					<form>
+						<fieldset>
+							<legend class="tit">로그인</legend>
+							<p class="desc">The Best Solution 서브큐, 오늘도 함께 해요!</p>
 
-						<div class="write_area">
-							<label class="log_id">
-								<input type="text" placeholder="아이디" title="아이디 입력">
-							</label>
-							<div class="error_txt error_id">아이디를 입력해 주세요.</div>
+							<div class="write_area">
+								<label class="inp_id">
+									<input type="text" placeholder="아이디" title="아이디 입력">
+								</label>
+								<div class="error_txt error_id">아이디를 입력해 주세요.</div>
 
-							<label class="log_pw">
-								<input type="password" placeholder="비밀번호" title="비밀번호 입력">
-							</label>
-							<div class="error_txt error_pw">비밀번호를 입력해 주세요.</div>
-							<div class="error_txt error_idpw">아이디 또는 비밀번호가 일치하지 않습니다.</div>
-						</div>
+								<label class="inp_pw">
+									<input type="password" placeholder="비밀번호" title="비밀번호 입력">
+								</label>
+								<div class="error_txt error_pw">비밀번호를 입력해 주세요.</div>
+								<div class="error_txt error_idpw">아이디 또는 비밀번호가 일치하지 않습니다.</div>
+							</div>
 
-						<div class="logbox">
-							<input type="checkbox" id="save_id" class="chk_type1">
-							<label for="save_id">아이디 저장</label>
+							<div class="logbox">
+								<input type="checkbox" id="save_id" class="chk_type1">
+								<label for="save_id">아이디 저장</label>
 
-							<span class="bar"></span>
-							<a href="/member/search_id.asp">아이디 찾기</a>
-							<span class="bar"></span>
-							<a href="/member/search_pw.asp">비밀번호 찾기</a>
-						</div>
+								<span class="bar"></span>
+								<a href="/member/search_id.asp">아이디 찾기</a>
+								<span class="bar"></span>
+								<a href="/member/search_pw.asp">비밀번호 찾기</a>
+							</div>
 
-						<!--
-							로그인 에러 함수 mypage_error('error1')
-							호출 시 문구 출력 및 해당되는 input 폼태그로 포커싱 처리
-							error1: 아이디 미입력
-							eroor2: 비밀번호 미입력
-							error3: 아이디,비번 불일치
-						-->
-						<div class="btnbox">
-							<a href="javascript:mypage_error('error1');" class="btn_login">로그인</a>
-							<a href="javascript:void(0)" class="btn_naver">NAVER 로그인</a>
-						</div>
+							<!--
+								로그인 에러 함수 member_error('error1')
+								호출 시 문구 출력 및 해당되는 input 폼태그로 포커싱 처리
+								error1: 아이디 미입력
+								eroor2: 비밀번호 미입력
+								error3: 아이디,비번 불일치
+							-->
+							<div class="btnbox">
+								<a href="javascript:member_error('error1');" class="btn_login">로그인</a>
+								<a href="javascript:void(0)" class="btn_naver">NAVER 로그인</a>
+							</div>
 
-						<p class="txt">SNS 계정을 통해 간편하게 이용하세요</p>
-					</fieldset>
-				</form>
+							<p class="txt">SNS 계정을 통해 간편하게 이용하세요</p>
+						</fieldset>
+					</form>
+				</div>
 			</div>
 		</div>
 	</main>
@@ -89,19 +91,16 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 	<!-- // footer -->
 
 	<script>
-		function mypage_error(err){
+		function member_error(err){
 			$('.member .login fieldset').removeClass("error1 error2 error3");
 			$('.member .login fieldset').addClass(err);
 			if(err=="error1"){
-				$('.member .login .log_id input').focus();
+				$('.member .login .inp_id input').focus();
 			}else{
-				$('.member .login .log_pw input').focus();
+				$('.member .login .inp_pw input').focus();
 			}
 		}
-		$('.member .login input').click(function(){
-			$('.member .login fieldset').removeClass("error1 error2 error3");
-		});
-		$('.member .login input').keypress(function(){
+		$('.member .login input').on('click keypress', function(){
 			$('.member .login fieldset').removeClass("error1 error2 error3");
 		});
 	</script>

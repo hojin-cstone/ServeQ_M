@@ -49,7 +49,31 @@ var fn = (function() {
                     callback();
                 }, 400);
             }
+        },
 
+        popupOpen : function(obj){
+            if (typeof obj === 'object') {
+                obj = obj.attributes.href.value
+            }
+            var $obj = $(obj);
+
+            $obj.show();
+
+            // fn.scroll('disabled');
+        },
+
+        popupClose : function(callback){
+            var $obj = $('.popup');
+
+            $obj.hide();
+
+            // fn.scroll('enabled');
+
+            if (callback) {
+                setTimeout(function(){
+                    callback();
+                }, 400);
+            }
         },
 
         // 말줄임 처리
