@@ -41,7 +41,10 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 						선진화와 표준화를 위한 시스템으로 식자재유통사업의 경쟁력을 높여 갑니다.
 					</p>
 					<p class="txt">
-						<span>사업부 운영 특성을 반영한 합리적 비즈니스 프로세스 기반의</span>
+						<span>
+							사업부 운영 특성을 반영한<br />
+							합리적 비즈니스 프로세스 기반의
+						</span>
 						<strong>최적 영업/물류정보시스템 구현</strong>
 					</p>
 					<ul>
@@ -96,10 +99,10 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 								<img src="/pjtCom/images/sub/img_infra_oms06.jpg" alt="" />
 							</div>
 							<dl>
-								<dt>영업</dt>
+								<dt>SCM</dt>
 								<dd>
-									<span>- 신규 거래처 영업지원</span>
-									<span>- 주문 ~ 출고 가시성확보 (고객 대응력 향상)</span>
+									<span>- 계획과 실행의 동기화</span>
+									<span>- 합리적 기준에 의한 적정재고 유지 및 거점배치</span>
 								</dd>
 							</dl>
 						</li>
@@ -108,10 +111,10 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 								<img src="/pjtCom/images/sub/img_infra_oms07.jpg" alt="" />
 							</div>
 							<dl>
-								<dt>영업</dt>
+								<dt>구매</dt>
 								<dd>
-									<span>- 신규 거래처 영업지원</span>
-									<span>- 주문 ~ 출고 가시성확보 (고객 대응력 향상)</span>
+									<span>- 다수 상품 관리효율 향상</span>
+									<span>- Buying Power 향상을 위한 납품처 정예화</span>
 								</dd>
 							</dl>
 						</li>
@@ -120,10 +123,10 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 								<img src="/pjtCom/images/sub/img_infra_oms08.jpg" alt="" />
 							</div>
 							<dl>
-								<dt>영업</dt>
+								<dt>물류</dt>
 								<dd>
-									<span>- 신규 거래처 영업지원</span>
-									<span>- 주문 ~ 출고 가시성확보 (고객 대응력 향상)</span>
+									<span>- 신속한 주문 대응</span>
+									<span>- 정보화 지원 확대를 통한 작업오류 최소화</span>
 								</dd>
 							</dl>
 						</li>
