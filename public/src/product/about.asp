@@ -36,7 +36,86 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 	<main id="wrap" class="<%= path1dir %>">
 		<div id="contents" class="<%= path2dir %>">
 			<div class="<%= path3dir %>">
-				SUB
+				<section class="section sec1">
+					<ul class="prd_list">
+						<li>
+							<dl>
+								<dt>
+									<strong>농산물</strong>
+									<img src="/pjtCom/images/sub/img_product_about01.jpg" alt="" />
+								</dt>
+								<dd>
+									<ul>
+										<li>- 농가 및 산지 직거래를 통한 품질</li>
+										<li>- 및 가격 경쟁력 확보</li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>
+									<strong>수산물</strong>
+									<img src="/pjtCom/images/sub/img_product_about02.jpg" alt="" />
+								</dt>
+								<dd>
+									<ul>
+										<li>- 글로벌 소싱을 통한 가격 경쟁력 확보</li>
+										<li>- 다양한 원물 및 가공 상품 보유</li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>
+									<strong>농산물</strong>
+									<img src="/pjtCom/images/sub/img_product_about03.jpg" alt="" />
+								</dt>
+								<dd>
+									<ul>
+										<li>- 철저한 수입 이력 관리</li>
+										<li>- 대량 구매를 통한 가격 경쟁력 확보</li>
+										<li>- 우육, 돈육, 계육, 난류 등</li>
+										<li>- 다양한 상품 보유</li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>
+									<strong>가공/비식품</strong>
+									<img src="/pjtCom/images/sub/img_product_about04.jpg" alt="" />
+								</dt>
+								<dd>
+									<ul>
+										<li>- 제조 공정, 유통 단계별</li>
+										<li>- 안정적 품질 관리(정기적 모니터링)</li>
+										<li>- 자사 PB 및 해외 유망 브랜드</li>
+										<li>- 제품군 보유</li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt>
+									<strong>냉동베이커리</strong>
+									<img src="/pjtCom/images/sub/img_product_about05.jpg" alt="" />
+								</dt>
+								<dd>
+									<ul>
+										<li>- 국가별(프랑스, 덴마크, 미국)</li>
+										<li>- 정통성을 가진 프리미엄 상품</li>
+										<li>- 최고수준의 원재료 사용</li>
+										<li>- R&D 노하우</li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</section>
 			</div>
 		</div>
 	</main>
