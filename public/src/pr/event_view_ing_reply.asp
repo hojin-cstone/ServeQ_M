@@ -78,9 +78,66 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 								</li>
 							</ul>
 						</div>
+						<div class="reply_wrap">
+							<p class="reply_num">전체 댓글 수(2)</p>
+							<div class="reply">
+								<form>
+									<fieldset>
+										<div class="reply_input">
+											<div class="reply_box">
+												<textarea title="댓글 입력" placeholder="내용을 입력해 주세요."></textarea>
+												<span class="re_counter"></span>
+											</div>
+											<a href="javascript:void(0)" class="btn_ok">등록하기</a>
+										</div>
+										<small class="reply_attention">* 주제와 무관한 댓글과 악플은 삭제될 수 있습니다.</small>
+									</fieldset>
+								</form>
+							</div>
+							<ul class="reply_list">
+								<li>
+									<dl>
+										<dt>chollon**</dt>
+										<dd>2017.12.18</dd>
+									</dl>
+									<p>이벤트 너무 감사합니다 :)</p>
+									<div class="btn_area">
+										<button class="btn_update">수정</button>
+										<button class="btn_delete">삭제</button>
+									</div>
+								</li>
+								<li>
+									<dl>
+										<dt>septemb**</dt>
+										<dd>2017.12.15</dd>
+									</dl>
+									<p>당첨 됐으면 좋겠어요!!</p>
+								</li>
+
+								<!-- 댓글 수정하기 // -->
+								<li class="edit_reply">
+									<dl>
+										<dt>septemb**</dt>
+										<dd>2017.12.15</dd>
+									</dl>
+									<form>
+										<fieldset>
+											<div class="reply_input">
+												<div class="reply_box">
+													<textarea title="댓글 입력" placeholder="내용을 입력해 주세요."></textarea>
+													<span class="re_counter"></span>
+												</div>
+												<a href="javascript:void(0)" class="btn_ok">수정하기</a>
+											</div>
+										</fieldset>
+									</form>
+								</li>
+								<!-- // 댓글 수정하기 -->
+							</ul>
+						</div>
 
 						<!-- mgt25 상단여백 클래스// 댓글이 달리면 class='mgt25' 추가 -->
-						<div class="btn_area">
+						<div class="btn_area mgt25">
 							<a href="javascript:void(0)" class="btn_gray">목록</a>
 						</div>
 						<!-- mgt25 상단여백 클래스// 댓글이 달리면 class='mgt25' 추가 -->

@@ -73,7 +73,6 @@ if ($('body').hasClass('sub')) {
 
 var path1 = $('#wrap').attr('class'),
     path2 = $('#contents').attr('class');
-
 switch (path1) {
     //
     case 'product' :
@@ -87,5 +86,14 @@ switch (path1) {
 
     break;
 
+    case 'pr' :
 
+        switch (path2) {
+            //
+            case 'event' :
+                fn.reply('.reply_box');
+            break;
+        }
+
+    break;
 }
