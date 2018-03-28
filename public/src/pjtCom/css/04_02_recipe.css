@@ -33,7 +33,7 @@
 .service .recipe .view_area { margin-top:-30px; }
 .service .recipe .view_area .txt_area .sort { width:33px; height:18px; font-size:10px; text-align:center; line-height:17px; padding:0 11px; border:1px solid #bbb; box-sizing:border-box; }
 .service .recipe .view_area .txt_area .btn_area .txt { position:absolute; top:58px; left:20px; font-size:12px; line-height:16px; color:#949494; }
-.service .recipe .view_area .txt_area .btn_area .txt:before { content:""; display:inline-block; width:16px; height:16px; vertical-align:middle; margin-right:9px; background:url(/pjtCom/images/common/icon_mark.png) no-repeat 0 0; background-size:16px; }
+.service .recipe .view_area .txt_area .btn_area .txt:before { content:""; display:inline-block; width:16px; height:16px; vertical-align:middle; margin-right:9px; background:url(/pjtCom/images/common/icon_mark.png) no-repeat 0 0; background-size:37px; }
 .service .recipe .view_area .txt_area .btn_area .btn_calculator { color:#fff; background:#d3472d; }
 .service .recipe .view_area .txt_area .btn_area .btn_counsel { color:#231f20; background:#e5e5e5; }
 .service .recipe .view_area .txt_area .btn_area .btn_calculator:before { width:16px; background-position:0 0; }

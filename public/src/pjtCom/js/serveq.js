@@ -114,6 +114,33 @@ switch (path1) {
                     spaceBetween: 9
                 });
             break;
+
+
+            // 원가계산기
+            case 'calculator' :
+                // 계산기 STEP3 전체선택
+                $('.btn_allchk').click(function(){
+                    $('input[type=checkbox]').prop('checked', true);
+                });
+
+                // 내가선택한 재료 열기/닫기
+                $('.choose_area .ea').click(function(){
+            		$('.choose_area').toggleClass('open');
+            	});
+
+                // 재료 직접 추가
+                $('.btn_add').click(function(){
+                    if ($('.input_wrap input').val() !== '') {
+                        $('.input_wrap').addClass('add');
+                        setTimeout(function(){
+                            $('.input_wrap').removeClass('add');
+                        }, 1000);
+                    } else {
+                        fn.alertOpen('#add_alert');
+                    }
+                });
+            break;
+
         }
     break;
 

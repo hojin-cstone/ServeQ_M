@@ -1,1 +1,133 @@
 /* 메뉴 원가계산기 */
+.service .calculator .intro_area { position:relative; padding:42px 20px 0;}
+.service .calculator .intro_area .btn_info { position:absolute; top:0; right:20px; font-size:13px; color:#949494; }
+.service .calculator .intro_area .btn_info:before { content:""; display:inline-block; width:16px; height:16px; margin-right:7px; background:url(/pjtCom/images/common/icon_mark.png) no-repeat -21px 0; background-size:37px; }
+.service .calculator .intro_area .txt { font-size:21px; text-align:center; line-height:27px; color:#231f20; margin-bottom:26px; }
+.service .calculator .intro_area .img { width:100%; }
+.service .calculator .intro_area .caution { display:inline-block; font-weight:400; font-size:12px; line-height:14px; color:#807e7e; margin:9px 0 0 8px; }
+.service .calculator .intro_area .caution:before { content:"*"; display:inline-block; margin:0 3px 0 -8px; }
+.service .calculator .intro_area .btn_start { display:block; width:175px; height:44px; font-size:16px; color:#fff; margin:39px auto 0; background:#ce462d; }
+
+.service .calculator .process { position:relative; font-size:0; text-align:center; padding-top:38px; counter-reset:number; }
+.service .calculator .process:before { content:""; position:absolute; top:12px; left:50%; transform:translateX(-50%); width:260px; height:1px; background:#e4e4e4; }
+.service .calculator .process li { display:inline-block; position:relative; font-size:13px; color:#807e7f; margin-left:16px; }
+.service .calculator .process li:before { content:counter(number)"."; counter-increment:number; display:inline-block; }
+.service .calculator .process li:after { content:""; position:absolute; top:-38px; left:50%; transform:translateX(-50%); width:25px; height:25px; background:url('/pjtCom/images/sub/icon_join_process.png') no-repeat 0 0; background-size:25px; }
+.service .calculator .process li:first-child { margin-left:0; }
+.service .calculator .process li.now { color:#231f20; }
+.service .calculator .process li.now:after { background-position:0 -25px; }
+
+.service .calculator .txt { font-weight:400; font-size:16px; text-align:center; line-height:19px; color:#231f20; margin:30px 0; }
+.service .calculator .calculator_list { font-size:0; text-align:center; padding:0 20px; }
+.service .calculator .calculator_list li { margin-top:30px; }
+.service .calculator [class^="step2"] .calculator_list li { margin-top:10px; }
+.service .calculator .calculator_list li:first-child { margin-top:0; }
+.service .calculator .calculator_list li .choose { display:block; position:relative; height:auto; line-height:auto; margin-left:0; padding-left:0; overflow:hidden; }
+.service .calculator .calculator_list li .choose img { width:100%; }
+.service .calculator .calculator_list li b { position:absolute; top:50%; left:0; z-index:2; transform:translateY(-50%); width:100%; font-size:20px; text-align:center; color:#fff; }
+.service .calculator .calculator_list li b:after { content:""; display:inline-block; width:10px; height:18px; vertical-align:top; margin-left:10px; margin-top:1px; background:url(/pjtCom/images/sub/icon_calculator_arrow.png) no-repeat 0 0; background-size:10px; }
+.service .calculator .calculator_list li p { font-weight:500; font-size:12px; color:#231f20; margin-top:10px; }
+
+
+.service .calculator .sort_area { margin-bottom:30px; padding:0 20px;  }
+
+.service .calculator .sort_area .region_area { display:block; margin-top:10px; }
+.service .calculator .sort_area .region_area [id^="select_region"] { float:left; width:calc(100% - 80px - 10px); height:44px; }
+.service .calculator .sort_area .region_area .btn_search { float:left; width:80px; height:44px; font-size:16px; color:#fff; margin-left:10px; background:#555; }
+
+
+.service .calculator .sort_area .category_area { display:block; }
+.service .calculator .sort_area .category_area a { display:block; float:left; height:44px; font-size:15px; text-align:center; line-height:42px; color:#807e7e; margin-right:5px; border:1px solid #e4e4e4; box-sizing:border-box; }
+.service .calculator .sort_area .category_area a:first-of-type,
+.service .calculator .sort_area .category_area a:nth-of-type(2) { width:calc((100% - 10px - 40.625%) / 2); }
+.service .calculator .sort_area .category_area a:last-child { width:40.625%; margin-right:0; }
+.service .calculator .sort_area .category_area a.now { line-height:44px; color:#fff; border:none; background:#ce462e; }
+.service .calculator .sort_area .category_area [id^="select_category"] { float:left; width:calc((100% - 80px - 5px - 10px) / 2); height:44px; margin-left:5px; }
+.service .calculator .sort_area .category_area [id^="select_category_depth1"] { margin-left:0; }
+.service .calculator .sort_area .category_area .btn_search { float:left; width:80px; height:44px; font-size:16px; color:#fff; margin-left:10px; background:#555; }
+
+.service .calculator .sort_area .add_area { display:block; margin-top:10px; }
+.service .calculator .sort_area .add_area .input_wrap { position:relative; float:left; width:calc(100% - 80px - 10px); }
+.service .calculator .sort_area .add_area .input_wrap:after { content:"재료가 추가되었습니다."; opacity:0; position:absolute; top:0; right:0; transition-duration:0.3s; width:0; height:44px; text-align:left; line-height:44px; color:#fff; padding-left:20px; background:#d86b57; box-sizing:border-box; }
+.service .calculator .sort_area .add_area .input_wrap.add:after { opacity:1; left:0; right:auto; width:100%; }
+.service .calculator .sort_area .add_area .input_wrap input { width:100%; height:44px; border:1px solid #e4e4e4; }
+.service .calculator .sort_area .add_area .btn_add { float:left; width:80px; height:44px; font-size:16px; color:#fff; margin-left:10px; background:#555; }
+
+.service .calculator .result_list label { width:auto; height:auto; padding:27px; }
+.service .calculator .result_list input[type=checkbox] + label:before { content:""; display:inline-block; vertical-align:top; background:url(/pjtCom/images/common/icon_form.png) no-repeat 0 0; background-size:100px; }
+.service .calculator .result_list input[type=checkbox].chk_type2 + label { }
+.service .calculator .result_list input[type=checkbox].chk_type2 + label:before { position:absolute; top:7px; left:7px; width:18px; height:18px; background-position:-26px -24px;}
+.service .calculator .result_list input[type=checkbox].chk_type2:checked + label:before { background-position:-26px -42px; }
+.service .calculator .btn_area { margin-top:30px; overflow:hidden; }
+.service .calculator .step3_area .btn_area,
+.service .calculator .step4_area .btn_area { padding:0 20px; }
+.service .calculator .btn_area [class^=btn] { width:90px; height:44px; font-weight:500; font-size:15px; color:#fff; background:#949494; }
+.service .calculator .btn_area .btn_prev { float:left; }
+.service .calculator .btn_area .btn_prev:before { content:""; display:inline-block; width:9px; height:15px; margin-right:15px; background:url(/pjtCom/images/common/icon_arrow_18x30.png) no-repeat 0 0; background-size:9px; }
+.service .calculator .btn_area .btn_next { float:right; }
+.service .calculator .btn_area .btn_next:after { content:""; display:inline-block; transform:rotate(180deg); width:9px; height:15px; margin-left:15px; background:url(/pjtCom/images/common/icon_arrow_18x30.png) no-repeat 0 0; background-size:9px; }
+.service .calculator .btn_area .btn_next.active { background:#ce462e; }
+
+.service .calculator .ingredients_table { margin-top:5px; padding:0 20px; }
+.service .calculator .ingredients_table table { border-top:1px solid #ece9e6; border-bottom:2px solid #ece9e6; }
+.service .calculator .ingredients_table thead tr:first-child th { padding:0 33px; border-bottom:1px solid #ece9e6; }
+.service .calculator .ingredients_table th { position:relative; font-weight:500; height:29px; font-size:12px; color:#81674a; border-left:1px solid #ece9e6; background:#f5f4f2; }
+.service .calculator .ingredients_table th:first-child { border-left:none; }
+.service .calculator .ingredients_table th input[type=text] { height:100%; font-size:13px; color:#81674a; text-align:center; border:none; background:none; }
+.service .calculator .ingredients_table th label { position:absolute; left:7px; top:50%; transform:translateY(-50%); font-size:0; margin:0; padding:0; }
+.service .calculator .ingredients_table th label:before {  }
+.service .calculator .ingredients_table td { height:40px; font-size:12px; text-align:center; vertical-align:middle; color:#231f20; border-top:1px solid #ece9e6; border-left:1px solid #ece9e6; }
+.service .calculator .ingredients_table td input { font-weight:500; font-size:12px; color:#555; text-align:center; border:none; }
+.service .calculator .ingredients_table td input::placeholder { font-size:12px; }
+.service .calculator .ingredients_table td input:focus { border:none; }
+.service .calculator .ingredients_table td:first-child { border-left:none; }
+
+.service .calculator .edit_area { margin-top:10px; padding:0 20px; overflow:hidden; }
+.service .calculator .edit_area button { float:left; width:calc((100% - 34.375% - 10px - 20px) / 2); max-width:90px; height:44px; font-size:15px; color:#231f20; margin:0 0 30px 10px; border:1px solid #000; background:#fff; }
+.service .calculator .edit_area button:first-child { margin-left:0; }
+.service .calculator .edit_area button.btn_add {float:right; width:34.375%; max-width:110px;  margin:0; color:#ce462d; border:1px solid #ce462d }
+.service .calculator .edit_area dl { text-align:center; line-height:44px; clear:both; }
+.service .calculator .edit_area dt { display:inline-block; font-size:13px; color:#555555; }
+.service .calculator .edit_area dd { display:inline-block; font-size:13px; color:#555555; }
+.service .calculator .edit_area dd input { width:140px; height:44px; margin:0 10px; border:1px solid #e4e4e4; }
+.service .calculator .edit_area dd input:focus { border-bottom:1px solid #e4e4e4; }
+
+.service .calculator .output_area { position:relative; margin-top:10px; }
+.service .calculator .output_area:before { content:""; position:absolute; top:65px; left:20px; width:calc(100% - 40px); height:1px; background:#555; }
+.service .calculator .output_area dl { font-size:0; text-align:center; line-height:44px; overflow:hidden; }
+.service .calculator .output_area dt { display:inline-block; width:102px; text-align:right; font-size:13px; margin-top:10px; }
+.service .calculator .output_area dd { display:inline-block; width:200px; font-weight:500; text-align:left; font-size:13px; margin-top:10px; padding-left:10px; }
+.service .calculator .output_area dd input { width:140px; height:44px; font-size:12px; line-height:44px; margin-right:10px; border:1px solid #e4e4e4; }
+.service .calculator .output_area dd input:focus { height:48px; line-height:48px; border-bottom:1px solid #e4e4e4; }
+.service .calculator .output_area dd input:disabled { opacity:1; color:#231f20; background:#fff; }
+.service .calculator .output_area dt.total_quantity { padding-top:10px; }
+.service .calculator .output_area dd.total_quantity { padding-top:10px; }
+.service .calculator .output_area dt.gram_price,
+.service .calculator .output_area dt.once_price { font-weight:600; color:#ce462d; }
+.service .calculator .output_area dd.gram_price input,
+.service .calculator .output_area dd.once_price input { color:#ce462d; border:1px solid #ce462d; }
+
+.service .calculator .btn_area { font-size:0; }
+.service .calculator .btn_area .page { margin-top:10px; padding-top:20px; border-top:1px solid #555; overflow:hidden; }
+.service .calculator .btn_area .btn_first { float:right; width:150px; height:44px; }
+.service .calculator .btn_area .btn_first:before { content:""; display:inline-block; width:18px; height:15px; margin-right:15px; background:url(/pjtCom/images/sub/icon_calculator_first.png) no-repeat 0 0; background-size:18px; }
+.service .calculator .btn_area .fn { overflow:hidden; }
+.service .calculator .btn_area .fn .txt { display:inline-block; font-size:13px; line-height:33px; letter-spacing:-0.075em; color:#807e7e; margin:0; }
+.service .calculator .btn_area .fn [class^=btn] { float:right; width:auto; height:33px; font-size:12px; color:#231f20; background:#fff; }
+.service .calculator .btn_area .fn [class^=btn]:after { content:""; display:inline-block; height:33px; margin-left:9px; background:url(/pjtCom/images/common/icon_function.png) no-repeat 0 0; background-size:33px; }
+.service .calculator .btn_area .fn .btn_scrap:after { width:33px; }
+
+.alert input { height:27px; line-height:27px; font-size:12px; text-align:center; margin-top:10px; border:none; border-bottom:1px solid #231f20; }
+.alert input:focus { border:none; border-bottom:1px solid #231f20; }
+
+.choose_area { position:fixed; z-index:999; bottom:0; left:0; width:100%; height:44px; line-height:44px; border-top:1px solid #dadada; background:#fff; user-select:none; }
+.choose_area .inner { position:absolute; bottom:0; left:0; width:100%; height:100%; }
+.choose_area .ea { position:absolute; z-index:1; bottom:0; right:0; width:100%; height:100%; font-weight:400; font-size:13px; padding-left:20px; background:#fff; box-sizing:border-box; cursor:pointer; }
+.choose_area .ea:before { content:""; position:absolute; top:0; right:0; width:44px; height:44px; background:#ce462d; }
+.choose_area .ea:after { content:""; position:absolute; top:50%; right:14px; transform-origin:50% 25%; transform:translateY(-50%); transition-duration:0.3s; width:15px; height:8px; background:url(/pjtCom/images/sub/btn_calculator_choose.png) no-repeat 0 0; background-size:15px; }
+.choose_area .choose_list { position:absolute; bottom:-100%; right:0; transition-duration:0.3s; width:100%; border-top:1px solid #dadada; background:#fff; box-sizing:border-box; }
+.choose_area .choose_list li { position:relative; font-size:12px; color:#231f20; line-height:32px; padding-left:15px; }
+.choose_area .choose_list li .btn_del { position:absolute; right:0; width:35px; height:100%; text-indent:-9999px; background:none; }
+.choose_area .choose_list li .btn_del:after { content:""; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:13px; height:13px; background:url(/pjtCom/images/sub/btn_calculator_del.png) no-repeat 0 0; background-size:10px; }
+.choose_area.open .choose_list { bottom:44px; }
+.choose_area.open .ea:after { transform:rotate(180deg); }

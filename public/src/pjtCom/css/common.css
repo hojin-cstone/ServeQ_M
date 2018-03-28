@@ -99,6 +99,9 @@ input[type=checkbox] + label:before { content:""; display:inline-block; vertical
 input[type=checkbox].chk_type1 + label {  }
 input[type=checkbox].chk_type1 + label:before { width:21px; height:21px; background-position:0 -24px;}
 input[type=checkbox].chk_type1:checked + label:before { background-position:0 -45px; }
+input[type=checkbox].chk_type2 + label { }
+input[type=checkbox].chk_type2 + label:before { width:18px; height:18px; background-position:-26px -24px;}
+input[type=checkbox].chk_type2:checked + label:before { background-position:-26px -42px; }
 
 /* radio */
 input[type=radio] { position:absolute; left:-9999px; }
@@ -159,7 +162,9 @@ input[type=radio].rdo_type1:checked + label:before { background-position:0 -45px
 [class*="bbs_gallery_list"] .result_list li:nth-child(2) { margin-top:0; }
 [class*="bbs_gallery_list"] .result_list li:nth-child(2n+1) { margin-left:0; }
 [class*="bbs_gallery_list"] .result_list label,
-[class*="bbs_gallery_list"] .result_list a { display:block; position:relative; text-align:center; border:1px solid #e4e4e4; background:#fff; box-sizing:border-box; }
+[class*="bbs_gallery_list"] .result_list a { display:block; position:relative; width:auto; height:auto; text-align:center; line-height:inherit; border:1px solid #e4e4e4; background:#fff; box-sizing:border-box; }
+[class*="bbs_gallery_list"] .result_list label:before { display:none; }
+[class*="bbs_gallery_list"] .result_list input:checked + label { border:1px solid #ce462d; }
 [class*="bbs_gallery_list"] .result_list .txt_area { margin-top:7px; }
 [class*="bbs_gallery_list"] .result_list .sort { font-size:12px; line-height:27px; color:#e19d3b; }
 [class*="bbs_gallery_list"] .result_list .name { height:32px; font-size:13px; line-height:16px; color:#231f20; }

@@ -52,7 +52,7 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 						</dl>
 					</div>
 					<!-- // 상단 타이틀 영역 -->
-					
+
 
 					<!-- // -->
 					<div class="share_function">
@@ -117,7 +117,7 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 					<!-- // -->
 
 					<div class="btn_area">
-						<button type="button" class="btn_apply">신청</button>
+						<button type="button" class="btn_apply" onclick="fn.alertOpen('#apply');">신청</button>
 						<a href="/service/form_list_poster.asp" class="btn_list">취소</a>
 					</div>
 				</article>
@@ -128,12 +128,11 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 	<!-- // wrap -->
 
 	<!-- popup // -->
-	<div id="scrap" class="alert">
+	<div id="apply" class="alert">
 		<div class="inner">
 			<button onclick="fn.alertClose()" type="button" class="btn_close">닫기</button>
 			<p class="txt">
-				스크랩이 완료되었습니다.
-				<span class="small">스크랩내역은 마이페이지에서<br>확인 가능합니다.</span>
+				신청이 완료되었습니다.
 			</p>
 			<button onclick="fn.alertClose()" type="button" class="btn_ok">확인</button>
 		</div>
