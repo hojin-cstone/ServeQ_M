@@ -3,11 +3,8 @@
 .service .form .month_area { margin-bottom:30px; }
 .service .form .month_area h3 { font-size:13px; color:#231f20; }
 .service .form .month_area .result_list { margin-top:13px; }
-.service .form .name .month_area .result_list .img { width:120px; height:120px; }
 .service .form .result_area { background:#fff; }
 .service .form .result_list a { padding:27px 17px; }
-.service .form .result_list .img { width:auto; height:120px; }
-.service .form .name .result_list .img { width:120px; height:auto; }
 
 
 /* 서식창고 상세 */
