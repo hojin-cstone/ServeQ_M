@@ -5,7 +5,7 @@
 */
 
 /* common */
-.sns_area { padding:20px 0; border-bottom:1px solid #221e1f; }
+/* .sns_area { padding:20px 0; border-bottom:1px solid #221e1f; }
 .sns_area ul:after { content:''; display:block; clear:both; }
 .sns_area li { float:left; margin-left:7px;}
 .sns_area li:first-child { margin-left:0; }
@@ -25,7 +25,7 @@
 .view_list .txt_area { padding:40px 0 26px; }
 .view_list .txt_area img { width:100%; }
 .view_list .btn_area { margin-top:60px; text-align:center; }
-.view_list .btn_area .btn_gray { display:inline-block; width:125px; height:44px; line-height:44px; background:#555555; color:#fff; }
+.view_list .btn_area .btn_gray { display:inline-block; width:125px; height:44px; line-height:44px; background:#555555; color:#fff; } */
 
 /* press */
 .pr .press .section { padding:16px 20px 0; box-sizing:border-box; }
@@ -83,7 +83,7 @@
 .pr .event .ing .event_list .paging { margin-top:30px; }
 
 /* event_list_ing */
-.pr .event .ing .reply_wrap { margin-top:60px; }
+.pr .event .ing .reply_wrap { margin-top:60px; padding:0 20px; }
 .pr .event .ing .reply_wrap .reply_num { font-size:13px; color:#231f20; }
 .pr .event .ing .reply_wrap .reply { margin-top:10px; }
 .pr .event .ing .reply_wrap small { display:block; text-align:right; padding:15px 0;}
@@ -105,9 +105,6 @@
 .pr .event .ing .reply_list li.edit_reply { padding-bottom:0; border:none; }
 .pr .event .ing .re_counter { font-size:13px; color:#949494; }
 .pr .event .ing .re_counter b { font-weight:600; color:#656565; }
-.pr .event .ing .nodata_reply { position:relative; margin-top:24px; padding-top:72px; text-align:center; }
-.pr .event .ing .nodata_reply:before { content:''; position:absolute; left:50%; top:0; margin-left:-36px; display:block; width:72px; height:72px; background:url('/pjtCom/images/common/no_data.jpg') no-repeat 0 0; background-size:72px; }
-.pr .event .ing .nodata_reply p { margin-top:19px; font-size:15px; color:#231f20; }
-.pr .event .ing .nodata_reply span { margin-top:10px; display:block; font-size:11px; color:#231f20; }
+.pr .event .ing .no_data { margin-top:24px; }
 .pr .event .ing .btn_ok { width:100%; height:45px; font-size:16px; background:#ce462e; color:#fff; text-align:center; }
-.pr .event .ing .btn_area.mgt25 { margin-top:25px; }
+.pr .event .ing .reply_wrap + .btn_list { margin-top:25px; }

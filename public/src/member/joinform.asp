@@ -104,7 +104,7 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 								<span>이메일</span>
 								<input type="text" title="이메일 입력">
 								<span class="at"></span>
-								<select title="이메일 선택" onchange="if($(this).val() === 'direct'){$('.inp_mail .direct').show()}">
+								<select title="이메일 선택" onchange="if($(this).val() === 'direct'){$('.inp_mail .direct').show()}else{$('.inp_mail .direct').hide()}">
 									<option>선택</option>
 									<option>naver.com</option>
 									<option>hanmail.net</option>
@@ -145,12 +145,17 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 									<option>울산광역시</option>
 									<option>인천광역시</option>
 									<option>전라남도</option>
+									<option>전라남도</option>
+									<option>전라북도</option>
+									<option>제주특별자치도</option>
+									<option>충청남도</option>
+									<option>충청북도</option>
 								</select>
 							</div>
 
 							<div class="inp_job">
 								<span>종사업종</span>
-								<select title="종사업종 선택">
+								<select title="종사업종 선택" onchange="if($(this).val() === 'direct'){$('.inp_job .direct').show()}else{$('.inp_job .direct').hide()}">
 									<option>선택</option>
 									<option>사무직</option>
 									<option>학생</option>
@@ -159,9 +164,9 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 									<option>레스토랑</option>
 									<option>중식당</option>
 									<option>식재료상</option>
-									<option>기타</option>
+									<option value="direct">기타</option>
 								</select>
-								<input type="text" title="업종 입력">
+								<input type="text" title="업종 입력" class="direct">
 							</div>
 							<p class="txt">*기타 업종일 경우 입력</p>
 

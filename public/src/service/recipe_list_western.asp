@@ -22,8 +22,6 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 	<!-- // config -->
 
 	<link rel="stylesheet" type="text/css" href="/pjtCom/css/sub.css" />
-	<link rel="stylesheet" type="text/css" href="/pjtCom/css/lib/swiper.min.css" />
-	<script src="/pjtCom/js/lib/swiper.js"></script>
 
 	<meta name="description" content="<%= description %>" />
 	<meta property="og:description" content="<%= description %>">
@@ -36,49 +34,32 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 
 	<!-- wrap -->
 	<main id="wrap" class="<%= path1dir %>">
-		<div id="contents" class="<%= path2dir %> rcp_list">
+		<div id="contents" class="<%= path2dir %>">
 			<div class="<%= path3dir %>">
-				<div class="menu_tab">
-				    <div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<a href="javascript:void(0)">전체</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="javascript:void(0)">에피타이저</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="javascript:void(0)">샐러드</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="javascript:void(0)">스프</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="javascript:void(0)">파스타/누들</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="javascript:void(0)">피자</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="javascript:void(0)">메인요리</a>
-						</div>
-						<div class="swiper-slide">
-							<a href="javascript:void(0)">기타</a>
-						</div>
-				    </div>
+
+				<!-- 분류 // -->
+				<div class="sort_list swiper-container">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide"><a href="#" class="now"><span>전체</span></a></li><!-- 현재 페이지에서 class="now" -->
+						<li class="swiper-slide"><a href="#"><span>에피타이저</span></a></li>
+						<li class="swiper-slide"><a href="#"><span>샐러드 스프</span></a></li>
+						<li class="swiper-slide"><a href="#"><span>파스타/누들</span></a></li>
+						<li class="swiper-slide"><a href="#"><span>피자</span></a></li>
+						<li class="swiper-slide"><a href="#"><span>메인요리</span></a></li>
+						<li class="swiper-slide"><a href="#"><span>기타</span></a></li>
+						<li class="swiper-slide"><a href="#"><span>피자</span></a></li>
+						<li class="swiper-slide"><a href="#"><span>메인요리</span></a></li>
+						<li class="swiper-slide"><a href="#"><span>기타</span></a></li>
+					</ul>
 				</div>
-				<script>
-				    var swiper = new Swiper('.menu_tab', {
-				      slidesPerView: 4,
-				      freeMode: true,
-					  grabCursor: true,
-					  loop:true
-				    });
-				</script>
+				<!-- // 분류 -->
+
+
 				<!-- 검색영역 // -->
 				<div class="search_area">
 					<div class="inner">
 						<fieldset>
-							<legend>검색</legend>
+							<legend class="hide">검색</legend>
 
 							<form>
 								<input type="text" placeholder="검색어를 입력해 주세요" title="검색어 입력">
@@ -95,129 +76,110 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 				</p>
 				<!-- //검색결과 메시지 -->
 
-				<!-- 검색결과 없을경우// -->
+				<!-- 검색결과 없을때 // -->
 				<div class="no_data">
-					<p>검색결과가 없습니다.</p>
-					<ul>
-						<li>- 입력하신 단어가 정확한지 확인해 주세요.</li>
-						<li>- 보다 일반적인 단어로 검색해 주세요.</li>
+					<img src="/pjtCom/images/common/no_data.png" alt="" class="img">
+					<p class="txt1">검색결과가 없습니다.</p>
+
+					<ul class="txt2_list">
+						<li class="txt2">입력하신 단어가 정확한지 확인해 주세요.</li>
+						<li class="txt2">보다 일반적인 단어로 검색해 주세요.</li>
 					</ul>
 				</div>
-				<!-- //검색결과 없을경우 -->
+				<!-- // 검색결과 없을때 -->
 
-				<section class="section sec1">
-					<div class="bbs_list">
-						<p>전체(84)</p>
-						<ul>
+				<!-- 검색결과 // -->
+				<div class="bbs_gallery_list result_area">
+					<div class="inner">
+						<p class="result">전체(84)</p>
+
+						<ul class="result_list">
+							<!-- 반복영역 // -->
 							<li>
-								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" />
-									<div class="txt">
-										<strong>파스타/누들</strong>
-										<span class="ellipsis">맥 앤 치즈</span>
+								<a href="/service/recipe_view_western.asp">
+									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" class="img">
+									<div class="txt_area">
+										<p class="sort">피자</p>
+										<p class="ellipsis name">무띠 피자소스로 만든 푸실리 파스타</p>
 									</div>
 								</a>
 							</li>
+							<!-- // 반복영역 -->
+
 							<li>
-								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" />
-									<div class="txt">
-										<strong>파스타/누들</strong>
-										<span class="ellipsis">맥 앤 치즈</span>
+								<a href="/service/recipe_view_western.asp">
+									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" class="img">
+									<div class="txt_area">
+										<p class="sort">에피타이저</p>
+										<p class="ellipsis name">무띠 피자소스로 만든 푸실리 파스타 무띠 ...</p>
 									</div>
 								</a>
 							</li>
+
 							<li>
-								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" />
-									<div class="txt">
-										<strong>파스타/누들</strong>
-										<span class="ellipsis">무띠 피자소스로 만든 푸실리 파스타파스타파스타</span>
+								<a href="/service/recipe_view_western.asp">
+									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" class="img">
+									<div class="txt_area">
+										<p class="sort">기타</p>
+										<p class="ellipsis name">무띠 피자소스로 만든 푸실리 파스타</p>
 									</div>
 								</a>
 							</li>
+
 							<li>
-								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" />
-									<div class="txt">
-										<strong>파스타/누들</strong>
-										<span class="ellipsis">맥 앤 치즈</span>
+								<a href="/service/recipe_view_western.asp">
+									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" class="img">
+									<div class="txt_area">
+										<p class="sort">파스타/누들</p>
+										<p class="ellipsis name">무띠 피자소스로 만든 푸실리 파스타</p>
 									</div>
 								</a>
 							</li>
+
 							<li>
-								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" />
-									<div class="txt">
-										<strong>파스타/누들</strong>
-										<span class="ellipsis">맥 앤 치즈</span>
+								<a href="/service/recipe_view_western.asp">
+									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" class="img">
+									<div class="txt_area">
+										<p class="sort">피자</p>
+										<p class="ellipsis name">무띠 피자소스로 만든 푸실리 파스타</p>
 									</div>
 								</a>
 							</li>
+
 							<li>
-								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" />
-									<div class="txt">
-										<strong>파스타/누들</strong>
-										<span class="ellipsis">맥 앤 치즈</span>
+								<a href="/service/recipe_view_western.asp">
+									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" class="img">
+									<div class="txt_area">
+										<p class="sort">피자</p>
+										<p class="ellipsis name">무띠 피자소스로 만든 푸실리 파스타</p>
 									</div>
 								</a>
 							</li>
+
 							<li>
-								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" />
-									<div class="txt">
-										<strong>파스타/누들</strong>
-										<span class="ellipsis">맥 앤 치즈</span>
+								<a href="/service/recipe_view_western.asp">
+									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" class="img">
+									<div class="txt_area">
+										<p class="sort">피자</p>
+										<p class="ellipsis name">무띠 피자소스로 만든 푸실리 파스타</p>
 									</div>
 								</a>
 							</li>
+
 							<li>
-								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" />
-									<div class="txt">
-										<strong>파스타/누들</strong>
-										<span class="ellipsis">맥 앤 치즈</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" />
-									<div class="txt">
-										<strong>파스타/누들</strong>
-										<span class="ellipsis">맥 앤 치즈</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" />
-									<div class="txt">
-										<strong>파스타/누들</strong>
-										<span class="ellipsis">맥 앤 치즈</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" />
-									<div class="txt">
-										<strong>파스타/누들</strong>
-										<span class="ellipsis">맥 앤 치즈</span>
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" />
-									<div class="txt">
-										<strong>파스타/누들</strong>
-										<span class="ellipsis">맥 앤 치즈</span>
+								<a href="/service/recipe_view_western.asp">
+									<img src="/pjtCom/images/temp/img_service_rlw01.jpg" alt="" class="img">
+									<div class="txt_area">
+										<p class="sort">피자</p>
+										<p class="ellipsis name">무띠 피자소스로 만든 푸실리 파스타</p>
 									</div>
 								</a>
 							</li>
 						</ul>
+
+
+
+						<!-- paging // -->
 						<div class="paging">
 							<a href="#" class="btn_first">처음으로</a>
 							<a href="#" class="btn_prev">이전</a>
@@ -231,8 +193,13 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 							<a href="#" class="btn_next">다음</a>
 							<a href="#" class="btn_last">끝으로</a>
 						</div>
+						<!-- // paging -->
+
+
 					</div>
-				</section>
+				</div>
+				<!-- // 검색결과 -->
+
 			</div>
 		</div>
 	</main>

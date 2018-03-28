@@ -86,6 +86,37 @@ switch (path1) {
 
     break;
 
+    case 'service' :
+
+        switch (path2) {
+            //
+            case 'recipe' :
+
+                var sort_list = new Swiper('.sort_list', {
+            		slidesPerView: 'auto'
+            	});
+
+                var hash_list = new Swiper('.hash_list', {
+            		slidesPerView: 'auto',
+            		spaceBetween: 9
+            	});
+
+                var product_list = new Swiper('.product_area .inner', {
+            		slidesPerView: 'auto',
+            		spaceBetween: 9
+            	});
+
+            break;
+
+            case 'form' :
+                var hash_list = new Swiper('.hash_list', {
+                    slidesPerView: 'auto',
+                    spaceBetween: 9
+                });
+            break;
+        }
+    break;
+
     case 'pr' :
 
         switch (path2) {

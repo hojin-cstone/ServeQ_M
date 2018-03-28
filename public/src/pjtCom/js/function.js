@@ -11,11 +11,11 @@ var fn = (function() {
         scroll : function(state){
             switch (state) {
                 case 'enabled' :
-                    $(window).off('touchmove');
+                    $('body').off('touchmove');
                 break;
 
                 case 'disabled' :
-                    $(window).on('touchmove', function(e) {
+                    $('body').on('touchmove', function(e) {
                         e.preventDefault();
                         return false;
                     });
@@ -58,16 +58,20 @@ var fn = (function() {
             var $obj = $(obj);
 
             $obj.show();
-
-            // fn.scroll('disabled');
+            $('.iScrollVerticalScrollbar').remove();
+            var myScroll = new IScroll('.popup .contents', {
+    			scrollbars: true,
+    			mouseWheel: true,
+    			interactiveScrollbars: true,
+    			shrinkScrollbars: 'scale',
+    			fadeScrollbars: true
+    		});
         },
 
         popupClose : function(callback){
             var $obj = $('.popup');
 
             $obj.hide();
-
-            // fn.scroll('enabled');
 
             if (callback) {
                 setTimeout(function(){
