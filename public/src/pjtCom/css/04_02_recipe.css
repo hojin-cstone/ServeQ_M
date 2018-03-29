@@ -83,8 +83,8 @@
 .service .recipe .counsel .view_area .txt_area .name { height:auto; font-size:13px; line-height:inherit; margin-top:10px; }
 .service .recipe .counsel .view_area .info_area { margin-bottom:20px; }
 .service .recipe .counsel .view_area .info_area .tit { font-size:13px; }
-.service .recipe .counsel .view_area .info_area .tit.answer span { position:relative; display:inline-block; }
-.service .recipe .counsel .view_area .info_area .tit.answer span:after { content:"답변완료"; display:inline-block; width:40px; height:16px; font-size:8px; vertical-align:top; text-align:center; line-height:16px; color:#fff; margin-left:15px; border-radius:16px; background:#ce462e; }
+.service .recipe .counsel .view_area .info_area .tit.answer span { position:relative; display:inline-block; padding-right:55px; }
+.service .recipe .counsel .view_area .info_area .tit.answer span:after { content:"답변완료"; position:absolute; top:0; right:0; width:40px; height:16px; font-size:8px; vertical-align:top; text-align:center; line-height:16px; color:#fff; margin-left:15px; border-radius:16px; background:#ce462e; }
 .service .recipe .counsel .view_area .edit_area { margin-top:0; }
 .service .recipe .counsel .view_area .btn_area { font-size:0; margin-top:60px; padding:0 20px; }
 .service .recipe .counsel .view_area .btn_area [class^="btn"] { display:inline-block; width:calc((100% - 20px) / 3); height:44px; font-size:16px; color:#fff; margin:0 0 0 10px; }
