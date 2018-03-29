@@ -38,7 +38,7 @@ html { font-family:'NanumSquare', sans-serif; font-weight:400; font-size:16px; l
 h1,h2,h3,h4,h5,h6 { margin:0; }
 ul, ol { list-style:none; margin:0; padding:0; }
 fieldset { margin:0; padding:0; border:none; }
-textarea { resize:none; }
+textarea { resize:none; -webkit-appearance:none; border-radius:0; padding:10px; box-sizing:border-box; }
 button { font-family:'NanumSquare', sans-serif; cursor:pointer; padding:0; border:none; }
 a { text-decoration:none; color:#555; }
 p { margin:0; }
@@ -108,16 +108,17 @@ input[type=radio] { position:absolute; left:-9999px; }
 input[type=radio] + label { display:inline-block; position:relative; height:21px; line-height:21px; cursor:pointer; }
 input[type=radio] + label:before { content:""; display:inline-block; vertical-align:top; background:url(/pjtCom/images/common/icon_form.png) no-repeat 0 0; background-size:100px; }
 input[type=radio].rdo_type1 + label {  }
-input[type=radio].rdo_type1 + label:before { width:21px; height:21px; background-position:0 -24px;}
+input[type=radio].rdo_type1 + label:before { width:21px; height:21px; margin-right:7px; background-position:0 -24px;}
 input[type=radio].rdo_type1:checked + label:before { background-position:0 -45px; }
 
 /* search */
 .search_area { margin-bottom:17px; padding:0 20px; box-sizing:border-box; }
 .search_area:after { content:""; display:block; clear:both; }
 .search_area .inner { position:relative; }
+.search_area select { margin-bottom:10px; border:none; border-bottom:1px solid #000; }
 .search_area input { height:35px; border:none; border-bottom:1px solid #000; }
 .search_area input:focus { border:none; border-bottom:1px solid #000; }
-.search_area .btn_search { position:absolute; top:0; right:0; width:35px; height:35px; text-indent:-9999px; background:none; }
+.search_area .btn_search { position:absolute; bottom:0; right:0; width:35px; height:35px; text-indent:-9999px; background:none; }
 .search_area .btn_search:after { content:""; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:16px; height:15px; background:url(/pjtCom/images/common/icon_form.png) no-repeat 0 -101px; background-size:100px; }
 .search_txt { font-size:15px; color:#231f20; text-align:center; }
 .no_data { text-align:center; margin:45px 0 75px; }
@@ -151,6 +152,22 @@ input[type=radio].rdo_type1:checked + label:before { background-position:0 -45px
 /* tabmenu */
 .tab_contents { display:none; }
 .tab_contents.show { display:block; }
+
+/* 게시판 : 목록 : 일반 타입 */
+[class*="bbs_basic_list"] { margin-top:15px; padding:0 20px; }
+.no_search + [class*="bbs_basic_list"] { margin-top:0; }
+[class*="bbs_basic_list"] .result { display:block; font-size:13px; color:#807e7f; margin-bottom:9px; }
+[class*="bbs_basic_list"] li { border-bottom:1px solid #e4e4e4; }
+[class*="bbs_basic_list"] li:first-child { border-top:1px solid #e4e4e4; }
+[class*="bbs_basic_list"] li a { display:block; padding:14px 0 12px; overflow:hidden; }
+[class*="bbs_basic_list"] li .img { float:left; width:40px; margin-right:20px; border:1px solid #e1e1e1; }
+[class*="bbs_basic_list"] li .txt_area {  }
+[class*="bbs_basic_list"] li img + .txt_area { float:left; width:calc(100% - 62px);}
+[class*="bbs_basic_list"] li .txt_area .subject { display:inline-block; position:relative; height:14px; font-size:12px; color:#231f20; margin-bottom:14px; box-sizing:border-box; }
+[class*="bbs_basic_list"] li .subject.answer { padding-right:52px; }
+[class*="bbs_basic_list"] li .txt_area .subject.answer:after { content:"답변완료"; position:absolute; top:-1px; right:0; width:40px; height:16px; font-size:8px; text-align:center; line-height:16px; color:#fff; border-radius:16px; background:#ce462e; }
+[class*="bbs_basic_list"] li .txt_area .id { display:inline-block; width:85px; font-size:11px; color:#000; }
+[class*="bbs_basic_list"] li .txt_area .date { font-size:11px; color:#807e7e; }
 
 /* 게시판 : 목록 : 갤러리 타입 */
 [class*="bbs_gallery_list"] { margin-top:15px; padding:0 20px; }
@@ -197,9 +214,17 @@ input[type=radio].rdo_type1:checked + label:before { background-position:0 -45px
 [class*="bbs_basic_view"] .info_area { margin-bottom:60px; }
 [class*="bbs_basic_view"] .info_area .tit { position:relative; font-weight:normal; font-size:16px; line-height:19px; color:#231f20; margin:0 20px; padding-bottom:8px; border-bottom:1px solid #a6a6a6; box-sizing:border-box; }
 [class*="bbs_basic_view"] .info_area .tit.new:after { content:''; display:inline-block; width:34px; height:14px; vertical-align:middle; margin-left:12px; background:url('/pjtCom/images/common/notice.png') no-repeat -26px 0; background-size:75px; }
+[class*="bbs_basic_view"] .info_area div,
 [class*="bbs_basic_view"] .info_area dl { font-size:12px; color:#807e7e; padding:0 20px; overflow:hidden; }
+[class*="bbs_basic_view"] .info_area div span:first-child,
 [class*="bbs_basic_view"] .info_area dt { clear:left; float:left; position:relative; width:62px; margin-top:10px; }
+[class*="bbs_basic_view"] .info_area div span:nth-child(2),
 [class*="bbs_basic_view"] .info_area dd { float:left; margin-top:10px; }
+[class*="bbs_basic_view"] .img_area { text-align:center; margin:0 20px 8px; padding-bottom:40px; border-bottom:1px solid #221e1f; }
+[class*="bbs_basic_view"] .img_area .img {  }
+[class*="bbs_basic_view"] .img_area .img img { width:100%; max-width:200px; }
+[class*="bbs_basic_view"] .img_area .txt_area .sort { display:inline-block; font-size:12px; line-height:27px; color:#e19d3b; }
+[class*="bbs_basic_view"] .img_area .txt_area .name { height:32px; font-size:13px; line-height:16px; color:#231f20; }
 [class*="bbs_basic_view"] .share_function { position:relative; height:43px; margin:0 20px; border-bottom:1px solid #221e1f; }
 [class*="bbs_basic_view"] .share_area { position:absolute; top:0 ; left:0; }
 [class*="bbs_basic_view"] .share_list li { float:left; margin-left:6px; }
@@ -215,6 +240,9 @@ input[type=radio].rdo_type1:checked + label:before { background-position:0 -45px
 [class*="bbs_basic_view"] .function_area .btn_scrap:after { width:33px; }
 [class*="bbs_basic_view"] .edit_area { margin:40px 0 60px; padding:0 20px; }
 [class*="bbs_basic_view"] .edit_area img { max-width:100%; }
+[class*="bbs_basic_view"] .reply_area { padding:0 20px; }
+[class*="bbs_basic_view"] .reply_area .inner { font-size:13px; line-height:20px; color:#555; padding:20px; background:#f7f7f7; }
+[class*="bbs_basic_view"] .reply_area b { display:inline-block; font-size:16px; color:#231f20; margin-bottom:13px; }
 [class*="bbs_basic_view"] .btn_list { display:block; width:125px; height:44px; color:#fff; margin:60px auto 0; background:#555; }
 
 /* 게시판 : 상세 : 갤러리 타입 */
@@ -250,6 +278,37 @@ input[type=radio].rdo_type1:checked + label:before { background-position:0 -45px
 [class*="bbs_gallery_view"] .edit_area { margin:40px 0 60px; padding:0 20px; }
 [class*="bbs_gallery_view"] .edit_area img { max-width:100%; }
 [class*="bbs_gallery_view"] .btn_list { display:block; width:125px; height:44px; color:#fff; margin:60px auto 0; background:#555; }
+
+/* 게시판 : 등록/수정 : 일반 타입 */
+[class*="bbs_basic_edit"] { padding:0 20px; }
+[class*="bbs_basic_edit"] select { margin-bottom:10px; border:none; border-bottom:1px solid #000; }
+[class*="bbs_basic_edit"] input { height:35px; border:none; border-bottom:1px solid #000; }
+[class*="bbs_basic_edit"] input:focus { border:none; border-bottom:1px solid #000; }
+[class*="bbs_basic_edit"] .state_area { font-size:13px; color:#555; margin:20px 0 30px; overflow:hidden; }
+[class*="bbs_basic_edit"] .state_area dt { float:left; width:75px; line-height:21px;}
+[class*="bbs_basic_edit"] .state_area dd { float:left; }
+[class*="bbs_basic_edit"] .state_area dd label { margin-right:23px; }
+[class*="bbs_basic_edit"] .img_area { text-align:center; }
+[class*="bbs_basic_edit"] .img_area .img {  }
+[class*="bbs_basic_edit"] .img_area .img img { width:100%; max-width:200px; }
+[class*="bbs_basic_edit"] .img_area .txt_area .sort { display:inline-block; font-size:12px; line-height:27px; color:#e19d3b; }
+[class*="bbs_basic_edit"] .img_area .txt_area .name { height:32px; font-size:13px; line-height:16px; color:#231f20; }
+[class*="bbs_basic_edit"] .edit { display:block; width:100%; height:200px; font-size:12px; border:1px solid #e4e4e4; }
+[class*="bbs_basic_edit"] .file_area { position:relative; font-size:0; margin-top:10px; }
+[class*="bbs_basic_edit"] .file_area span { display:inline-block; width:72px; height:40px; font-size:13px; color:#555; line-height:40px; }
+[class*="bbs_basic_edit"] .file_area input[type="file"] { width:0; height:0; overflow:hidden; }
+[class*="bbs_basic_edit"] .file_area label { display:inline-block; position:relative; width:100px; height:40px; font-size:13px; color:#231f20; text-align:center; line-height:40px; border:1px solid #b5b5b5; background:#f6f6f6; box-sizing:border-box;}
+[class*="bbs_basic_edit"] .file_area .file_name { height:0; border:none; }
+[class*="bbs_basic_edit"] .file_area .file_name.show { height:inherit; border-bottom:1px solid #000; }
+[class*="bbs_basic_edit"] .txt_list { margin-top:24px; }
+[class*="bbs_basic_edit"] .txt_list li { font-size:13px; line-height:18px; color:#949494; margin-left:10px; }
+[class*="bbs_basic_edit"] .txt_list li:before { content:"-"; display:inline-block; margin:0 6px 0 -10px; }
+[class*="bbs_basic_edit"] .btn_area { font-size:0; margin-top:30px; }
+[class*="bbs_basic_edit"] .btn_area [class^="btn"] { display:inline-block; width:calc((100% - 10px) / 2); height:44px; font-size:16px; margin-left:10px; }
+[class*="bbs_basic_edit"] .btn_area [class^="btn"]:first-child { margin-left:0; }
+[class*="bbs_basic_edit"] .btn_area .btn_regist { color:#fff; background:#ce462e; }
+[class*="bbs_basic_edit"] .btn_area .btn_cancel { border:1px solid #231f20; background:#fff; }
+
 
 /**
 * header

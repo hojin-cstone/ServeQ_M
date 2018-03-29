@@ -83,7 +83,7 @@
 										<li><a href="/service/recipe_list_western.asp">양식 레시피</a></li>
 										<li><a href="/service/recipe_list_chinese.asp">중식 레시피</a></li>
 										<li><a href="/service/recipe_list_baking.asp">제과제빵 레시피</a></li>
-										<li><a href="#">셰프 1:1 상담</a></li>
+										<li><a href="/service/recipe_list_counsel.asp">셰프 1:1 상담</a></li>
 									</ul>
 								</div>
 							</li>
