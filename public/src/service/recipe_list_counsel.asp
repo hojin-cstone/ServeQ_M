@@ -108,7 +108,11 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 							</li>
 						</ul>
 
-						<a href="#" class="btn_regist">질문 등록하기</a>
+						<!--
+							팝업 호출함수 fn.alertOpen('#alert1')
+							#alert1: 로그인상태가 아닌경우
+						-->
+						<a href="#" class="btn_regist" onclick="fn.alertOpen('#alert1'); return false;">질문 등록하기</a>
 
 						<!-- paging // -->
 						<div class="paging">
@@ -135,6 +139,18 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 		</div>
 	</main>
 	<!-- // wrap -->
+
+	<!-- popup -->
+	<div id="alert1" class="alert">
+		<div class="inner">
+			<button onclick="fn.alertClose()" type="button" class="btn_close">닫기</button>
+			<p class="txt">
+				로그인 후 이용 가능합니다.
+			</p>
+			<a href="/member/login.asp" class="btn_ok">확인</a>
+		</div>
+	</div>
+	<!-- popup -->
 
 	<!-- footer // -->
 	<!--#include virtual="/inCom/footer.asp"-->

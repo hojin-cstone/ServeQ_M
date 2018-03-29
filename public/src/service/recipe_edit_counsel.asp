@@ -90,8 +90,12 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 								<li>광고성 내용 및 불건전한 내용의 게시물은 통보 없이 삭제될 수 있습니다.</li>
 							</ul>
 
+							<!--
+								팝업 호출함수 fn.alertOpen('#alert1')
+								#alert1: 질문유형 미선택시
+							-->
 							<div class="btn_area">
-								<button type="button" class="btn_regist">등록</button>
+								<button type="button" class="btn_regist" onclick="fn.alertOpen('#alert1');">등록</button>
 								<button type="button" class="btn_cancel" onclick="history.back();">취소</a>
 							</div>
 
@@ -103,6 +107,18 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 		</div>
 	</main>
 	<!-- // wrap -->
+
+	<!-- popup -->
+	<div id="alert1" class="alert">
+		<div class="inner">
+			<button onclick="fn.alertClose()" type="button" class="btn_close">닫기</button>
+			<p class="txt">
+				질문 유형을 선택해 주세요.
+			</p>
+			<button onclick="fn.alertClose()" type="button" class="btn_ok">확인</button>
+		</div>
+	</div>
+	<!-- popup -->
 
 	<!-- footer // -->
 	<!--#include virtual="/inCom/footer.asp"-->

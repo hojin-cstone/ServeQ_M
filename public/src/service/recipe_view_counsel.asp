@@ -90,9 +90,13 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 					</div>
 					<!-- // 답변 영역 -->
 
+					<!--
+						팝업 호출함수 fn.alertOpen('#alert1')
+						#alert1: 삭제
+					-->
 					<div class="btn_area">
 						<button type="button" class="btn_modify">수정</button>
-						<button type="button" class="btn_del">삭제</button>
+						<button type="button" class="btn_del" onclick="fn.alertOpen('#alert1');">삭제</button>
 						<a href="/service/recipe_list_counsel.asp" class="btn_list">목록</a>
 					</div>
 				</article>
@@ -101,6 +105,18 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 		</div>
 	</main>
 	<!-- // wrap -->
+
+	<!-- popup -->
+	<div id="alert1" class="alert">
+		<div class="inner">
+			<button onclick="fn.alertClose()" type="button" class="btn_close">닫기</button>
+			<p class="txt">
+				정말 삭제하시겠습니까?
+			</p>
+			<button onclick="fn.alertClose()" type="button" class="btn_ok">삭제</button>
+		</div>
+	</div>
+	<!-- popup -->
 
 	<!-- footer // -->
 	<!--#include virtual="/inCom/footer.asp"-->
