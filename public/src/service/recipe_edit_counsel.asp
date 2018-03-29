@@ -55,7 +55,7 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 							<dl class="state_area">
 								<dt>공개여부</dt>
 								<dd>
-									<input type="radio" class="rdo_type1" id="open" name="state"><label for="open">공개</label>
+									<input type="radio" class="rdo_type1" id="open" name="state" checked><label for="open">공개</label>
 									<input type="radio" class="rdo_type1" id="lock" name="state"><label for="lock">비공개</label>
 								</dd>
 							</dl>

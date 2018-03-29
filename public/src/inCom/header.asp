@@ -88,7 +88,7 @@
 								</div>
 							</li>
 							<li><a href="/service/calculator.asp">메뉴 원가계산기</a></li>
-							<li><a href="">서브큐 세미나</a></li>
+							<li><a href="/service/seminar_list.asp">서브큐 세미나</a></li>
 							<li>
 								<a href="#form">서식창고</a>
 
