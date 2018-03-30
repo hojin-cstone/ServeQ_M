@@ -197,13 +197,19 @@ var fn = (function() {
         //파일첨부 업로드
         upload : function(obj){
             var obj = $(obj);
+            var filename='';
             obj.find('.upload_hidden').on('change', function(){
                 if(window.FileReader){
-                    var filename = $(this)[0].files[0].name;
+                    if($(this)[0].files[0]==undefined){
+                        filename='';
+                    }else{
+                        filename = $(this)[0].files[0].name;
+                    }
+                    obj.find('label').text(filename);
                 } else {
-                    var filename = $(this).val().split('/').pop().split('\\').pop();
+                    filename = $(this).val().split('/').pop().split('\\').pop();
+                    obj.find('label').text(filename);
                 }
-                 obj.find('label').text(filename);
              });
         }
     }
