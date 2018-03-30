@@ -57,6 +57,22 @@
 /* 세미나 상세 */
 .service .seminar .view_area .tit { padding-top:8px; }
 .service .seminar .view_area .info_area { margin-bottom:0; }
+.service .seminar .view_area .info_area > div { margin-top:8px; overflow:hidden; }
+.service .seminar .view_area .info_area small { float:left; height:20px; font-size:12px; text-align:center; line-height:20px; margin-left:3px; border-radius:20px; box-sizing:border-box; }
+.service .seminar .view_area .info_area small:first-child { margin-left:0; }
+.service .seminar .view_area .info_area small.category { width:80px; color:#fff; }
+.service .seminar .view_area .info_area small.category.cooking { background:#e67878; }
+.service .seminar .view_area .info_area small.category.baking { background:#e6c378; }
+.service .seminar .view_area .info_area small.region { width:70px; border:1px solid #ece9e6; }
+.service .seminar .view_area .info_area small.state { width:70px; }
+.service .seminar .view_area .info_area small.state.end { color:#949494; border:1px solid #949494; }
+.service .seminar .view_area .info_area small.state.ing { color:#ce462d; border:1px solid #ce462d; }
+.service .seminar .view_area .info_area dl { overflow:hidden; }
+.service .seminar .view_area .info_area dt { clear:inherit; float:left; }
+.service .seminar .view_area .info_area dt:first-child { width:40px; }
+.service .seminar .view_area .info_area dd { float:left; }
+.service .seminar .view_area .info_area dd:nth-of-type(1) { margin-right:34px; }
+.service .seminar .view_area .info_area dt:nth-of-type(3) { clear:both; }
 .service .seminar .view_area .edit_area { margin:20px 0 0; }
 .service .seminar .view_area .btn_apply,
 .service .seminar .view_area .btn_cancel { display:block; width:155px; height:44px; font-size:16px; color:#fff; margin:30px auto 50px; background:#ce462e; }
