@@ -46,7 +46,7 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 						<fieldset>
 							<legend class="hide">비밀번호 확인</legend>
 							<div class="inp_pw">
-								<input type="password" placeholder="비밀번호" title="비밀번호 입력">
+								<input type="password" placeholder="비밀번호를 입력해 주세요." title="비밀번호 입력">
 								<!--
 									팝업 호출함수 fn.alertOpen('#alert1')
 									#alert1: 비밀번호 불일치

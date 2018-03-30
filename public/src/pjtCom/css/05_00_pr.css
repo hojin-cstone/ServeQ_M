@@ -4,63 +4,8 @@
 * --------------------------------
 */
 
-/* common */
-/* .sns_area { padding:20px 0; border-bottom:1px solid #221e1f; }
-.sns_area ul:after { content:''; display:block; clear:both; }
-.sns_area li { float:left; margin-left:7px;}
-.sns_area li:first-child { margin-left:0; }
-.sns_area li .sns_icon { display:block; width:33px; height:33px; background:url('/pjtCom/images/common/sns.png') no-repeat 0 0; background-size:111px; text-indent:-9999px; }
-.sns_area li .sns_icon.fb { background-position:0 0; }
-.sns_area li .sns_icon.band { background-position:-40px 0; }
-.sns_area li .sns_icon.kakao { background-position:-79px 0; }
-
-.view_list .tit h3 { position:relative; display:inline-block; line-height:20px; padding-bottom:8px; }
-.view_list .tit h3.new { padding-right:45px; }
-.view_list .tit h3.new:after {  content:''; display:block; position:absolute; right:0; top:3px; width:34px; height:14px; background:url('/pjtCom/images/common/notice.png') no-repeat -26px 0; background-size:75px; }
-.view_list .tit dl { padding:5px 0; line-height:20px; font-size:12px; color:#807e7e; border-top:1px solid #221e1f; }
-.view_list .tit dl:after { content:''; display:block; clear:both; }
-.view_list .tit dl dt { float:left; }
-.view_list .tit dl dt:nth-child(3) { clear:both; }
-.view_list .tit dl dd { float:left; margin-left:20px; }
-.view_list .txt_area { padding:40px 0 26px; }
-.view_list .txt_area img { width:100%; }
-.view_list .btn_area { margin-top:60px; text-align:center; }
-.view_list .btn_area .btn_gray { display:inline-block; width:125px; height:44px; line-height:44px; background:#555555; color:#fff; } */
-
-/* press */
-.pr .press .section { padding:16px 20px 0; box-sizing:border-box; }
-.pr .press .block_list p { font-size:13px; color:#807e7f; }
-.pr .press .block_list ul { margin-top:10px; }
-.pr .press .block_list ul li { position:relative; margin-top:10px; height:117px; }
-.pr .press .block_list ul li:first-child { margin-top:0; }
-.pr .press .block_list ul li a { position:relative; display:block; width:100%; height:100%; border:1px solid #e7e7e7; box-sizing:border-box; }
-.pr .press .block_list ul li a:after { content:''; position:absolute; right:26px; bottom:27px; width:34px; height:5px; background:url('/pjtCom/images/common/right_arrow.png') no-repeat 0 0; background-size:34px; }
-.pr .press .block_list ul li .img_area { position:absolute; top:50%; left:58px; transform:translate(-50%,-50%); border-radius:90px; overflow:hidden; }
-.pr .press .block_list ul li .img_area img { width:90px; height:90px; }
-.pr .press .block_list ul li .txt_area { float:right; width:100%; padding:21px 26px 0 116px; box-sizing:border-box; }
-.pr .press .block_list ul li span { font-size:12px; color:#807e7e; }
-.pr .press .block_list ul li h3 { margin-top:8px; font-size:13px; line-height:15px; max-height:30px; }
-.pr .press .block_list .paging { margin-top:30px; }
-
 /* press_view */
 .pr .press .press_view .section { padding:0 20px; }
-
-/* notice */
-.pr .notice .section { padding:16px 20px 0; box-sizing:border-box; }
-.pr .notice .notice_list p { font-size:13px; color:#807e7f; }
-.pr .notice .notice_list ul { margin-top:10px; border-top:1px solid #e4e4e4; }
-.pr .notice .notice_list ul li { border-bottom:1px solid #e4e4e4; }
-.pr .notice .notice_list ul li a { display:block; width:100%; padding:18px 20px; box-sizing:border-box; }
-.pr .notice .notice_list ul li h3 { position:relative; display:inline-block; font-size:13px; line-height:17px; height:34px; max-height:34px; color:#231f20; box-sizing:border-box; }
-.pr .notice .notice_list ul li h3:before { content:''; display:none; position:absolute; left:0; top:0; width:20px; height:16px; background:url('/pjtCom/images/common/notice.png') no-repeat 0 0; background-size:75px; }
-.pr .notice .notice_list ul li h3:after { content:''; display:none; position:absolute; right:0; top:2px; width:34px; height:14px; background:url('/pjtCom/images/common/notice.png') no-repeat -26px 0; background-size:75px; }
-.pr .notice .notice_list ul li h3.new { padding-right:42px; }
-.pr .notice .notice_list ul li h3.new:after { display:block; }
-.pr .notice .notice_list ul li span { display:block; margin-top:10px; font-size:12px; text-align:right; color:#807e7e; }
-.pr .notice .notice_list ul li.fix_notice { background:#f7f7f7; }
-.pr .notice .notice_list ul li.fix_notice h3 { padding-left:33px; }
-.pr .notice .notice_list ul li.fix_notice h3:before { display:block; }
-.pr .notice .notice_list .paging { margin-top:30px; }
 
 /* event_list_ing */
 .pr .event .ing .tab_wrap:after { content:''; display:block; clear:both; }

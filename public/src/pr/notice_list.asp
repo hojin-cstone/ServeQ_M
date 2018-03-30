@@ -71,10 +71,9 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 				<!-- // 검색결과 없을때 -->
 
 
-				<section class="section sec1">
-					<div class="notice_list">
+				<div class="notice_list">
 						<p>전체(123)</p>
-						<ul>
+						<ul class="result_list">
 							<li class="fix_notice">
 								<a href="javascript:void(0)">
 									<div class="txt_area">
@@ -154,7 +153,7 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 							<a href="#" class="btn_last">끝으로</a>
 						</div>
 					</div>
-				</section>
+
 			</div>
 		</div>
 	</main>
