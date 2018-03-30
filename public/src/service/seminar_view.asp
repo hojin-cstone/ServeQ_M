@@ -68,11 +68,18 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 
 					<!-- 상단 타이틀 영역 // -->
 					<div class="info_area">
+						<div>
+							<small class="category cooking">쿠킹클래스</small><!-- 쿠킹클레스 -->
+							<!-- <small class="category baking">제과제빵세미나</small> --> <!-- 제과제빵세미나 -->
+							<small class="state ing">모집 중</small><!-- 모집중 -->
+							<!-- <small class="state end">모집마감</small> --><!-- 모집마감 -->
+						</div>
+
 						<h3 class="tit">2017 크리스마스 케이크 홍보 포스터</h3>
 
 						<dl>
-							<dt>등록날짜</dt>
-							<dd>2018.02.19</dd>
+							<dt>장소</dt>
+							<dd>서울</dd>
 
 							<dt>신청 기간</dt>
 							<dd>2018.02.19 ~ 2018.03.02</dd>
