@@ -2,10 +2,10 @@
 
 <%
 path1dir="mypage"
-path2dir="scrap"
-path3dir="magazine"
+path2dir="consult"
+path3dir=""
 path1tit="마이페이지"
-path2tit="나의 스크랩"
+path2tit="나의 활동"
 path3tit=""
 description = "ServeQ "
 If path3tit = "" Then description=description+path2tit Else description=description+path3tit End If
@@ -36,143 +36,81 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 	<main id="wrap" class="<%= path1dir %>">
 		<div id="contents" class="<%= path2dir %>">
 			<div class="<%= path3dir %>">
+
 				<div class="tab_area">
 					<ul>
 						<li>
-							<a href="/mypage/scrap.asp">셰프 레시피</a>
-						</li>
-						<li>
-							<a href="/mypage/scrap_calc.asp">메뉴 원가계산기</a>
+							<a href="/mypage/history.asp">문의하기</a>
 						</li>
 						<li class="on">
-							<a href="/mypage/scrap_magazine.asp">서브큐 매거진</a>
+							<a href="/mypage/consult.asp">셰프 1:1 상담</a>
 						</li>
 					</ul>
 				</div>
-				<div class="bbs_masonry_list">
+
+				<!-- 검색결과 // -->
+				<div class="bbs_basic_list result_area">
 					<div class="inner">
 						<p class="result">전체(101)</p>
+
 						<ul class="result_list chk_type2">
 							<!-- 반복영역 // -->
-							<li class="list">
-								<!-- 체크박스 -->
+							<li>
 								<input type="checkbox" id="chk1">
 								<label for="chk1"></label>
-								<!-- //체크박스 -->
 								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_magazine_310x280_1.jpg" alt="" class="img">
+									<img src="/pjtCom/images/temp/img_counsel_70x70.jpg" alt="" class="img">
 									<div class="txt_area">
-										<p class="date">2017.10.29</p>
-										<p class="ellipsis subject">2018년에 주목해야 할 외식업 트렌드 키워드</p>
+										<!--
+											answer: 답변완료
+											rock: 비공개
+											rock answer : 답변완료,비공개
+										-->
+										<p class="ellipsis subject answer">[당첨자 발표]서브큐 2017년 11월 세모이 초콜릿 이벤모이 초콜릿 이벤모이 초콜릿 이벤트 당첨자 발표</p>
+										<div><span class="id">chollon**</span><span class="date">2017.12.10</span></div>
 									</div>
 								</a>
 							</li>
 							<!-- // 반복영역 -->
 
-							<li class="list">
+							<li>
 								<input type="checkbox" id="chk2">
 								<label for="chk2"></label>
 								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_magazine_310x280_2.jpg" alt="" class="img">
 									<div class="txt_area">
-										<p class="date">2017.10.29</p>
-										<p class="ellipsis subject">2018년에 주목해야 할 외식업 트렌드 키워드</p>
+										<p class="ellipsis subject">서브큐 2017년 11월 세모이 초콜릿</p>
+										<div><span class="id">chollon**</span><span class="date">2017.12.10</span></div>
 									</div>
 								</a>
 							</li>
-
-							<li class="list">
+							<li>
 								<input type="checkbox" id="chk3">
 								<label for="chk3"></label>
 								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_magazine_310x280_3.jpg" alt="" class="img">
 									<div class="txt_area">
-										<p class="date">2017.10.29</p>
-										<p class="ellipsis subject">2018년에 주목해야 할 외식업 트렌드 키워드</p>
+										<p class="ellipsis subject rock">서브큐 2017년 11월 세모이 초콜릿</p>
+										<div><span class="id">chollon**</span><span class="date">2017.12.10</span></div>
 									</div>
 								</a>
 							</li>
-
-							<li class="list">
+							<li>
 								<input type="checkbox" id="chk4">
 								<label for="chk4"></label>
 								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_magazine_310x280_1.jpg" alt="" class="img">
 									<div class="txt_area">
-										<p class="date">2017.10.29</p>
-										<p class="ellipsis subject">2018년에 주목해야 할 외식업 트렌드 키워드</p>
+										<p class="ellipsis subject answer">서브큐 2017년 11월 세모이 초콜릿</p>
+										<div><span class="id">chollon**</span><span class="date">2017.12.10</span></div>
 									</div>
 								</a>
 							</li>
-
-							<li class="list">
+							<li>
 								<input type="checkbox" id="chk5">
 								<label for="chk5"></label>
 								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_magazine_310x280_2.jpg" alt="" class="img">
+									<img src="/pjtCom/images/temp/img_counsel_70x70.jpg" alt="" class="img">
 									<div class="txt_area">
-										<p class="date">2017.10.29</p>
-										<p class="ellipsis subject">2018년에 주목해야 할 외식업 트렌드 키워드</p>
-									</div>
-								</a>
-							</li>
-
-							<li class="list">
-								<input type="checkbox" id="chk6">
-								<label for="chk6"></label>
-								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_magazine_310x280_3.jpg" alt="" class="img">
-									<div class="txt_area">
-										<p class="date">2017.10.29</p>
-										<p class="ellipsis subject">2018년에 주목해야 할 외식업 트렌드 키워드</p>
-									</div>
-								</a>
-							</li>
-
-							<li class="list">
-								<input type="checkbox" id="chk7">
-								<label for="chk7"></label>
-								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_magazine_310x280_1.jpg" alt="" class="img">
-									<div class="txt_area">
-										<p class="date">2017.10.29</p>
-										<p class="ellipsis subject">2018년에 주목해야 할 외식업 트렌드 키워드</p>
-									</div>
-								</a>
-							</li>
-
-							<li class="list">
-								<input type="checkbox" id="chk8">
-								<label for="chk8"></label>
-								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_magazine_310x280_1.jpg" alt="" class="img">
-									<div class="txt_area">
-										<p class="date">2017.10.29</p>
-										<p class="ellipsis subject">2018년에 주목해야 할 외식업 트렌드 키워드</p>
-									</div>
-								</a>
-							</li>
-
-							<li class="list">
-								<input type="checkbox" id="chk9">
-								<label for="chk9"></label>
-								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_magazine_310x280_3.jpg" alt="" class="img">
-									<div class="txt_area">
-										<p class="date">2017.10.29</p>
-										<p class="ellipsis subject">2018년에 주목해야 할 외식업 트렌드 키워드</p>
-									</div>
-								</a>
-							</li>
-
-							<li class="list">
-								<input type="checkbox" id="chk10">
-								<label for="chk10"></label>
-								<a href="javascript:void(0)">
-									<img src="/pjtCom/images/temp/img_magazine_310x280_2.jpg" alt="" class="img">
-									<div class="txt_area">
-										<p class="date">2017.10.29</p>
-										<p class="ellipsis subject">2018년에 주목해야 할 외식업 트렌드 키워드</p>
+										<p class="ellipsis subject answer rock">서브큐 2017년 11월 세모이 초콜릿서브큐 2017년 11월 세모이 초콜릿서브큐 2017년 11월 세모이 초콜릿</p>
+										<div><span class="id">chollon**</span><span class="date">2017.12.10</span></div>
 									</div>
 								</a>
 							</li>
@@ -205,6 +143,8 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 						<!-- // paging -->
 					</div>
 				</div>
+				<!-- // 검색결과 -->
+
 			</div>
 		</div>
 	</main>
@@ -237,15 +177,7 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 	<!-- // footer -->
 
 	<!-- script -->
-	<script src="/pjtCom/js/lib/masonry.pkgd.min.js"></script>
 	<script>
-		$(document).ready(function(){
-			var $grid =	$('.bbs_masonry_list .result_list').masonry({
-				  itemSelector: '.result_list > li',
-				  gutter: 10
-				});
-
-		});
 		function chkTypeAllCheck(obj){
 			var obj = $(obj);
 			obj.find('input[type="checkbox"]').each(function(){
