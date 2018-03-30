@@ -21,9 +21,9 @@
 .mypage .password_update .inp_box small { display:block; margin-top:7px; color:#807e7f; }
 .mypage .password_update .btn_area { margin-top:60px; }
 .mypage .password_update .btn_area:after { content:''; display:block; clear:both; }
-.mypage .password_update .btn_area a { width:calc(50vw - 26px); }
+.mypage .password_update .btn_area button { width:calc(50% - 4px); }
 .mypage .password_update .btn_area .btn_gray { float:left; background:#555555; color:#fff; line-height:45px; }
-.mypage .password_update .btn_area .btn_wht { float:left; margin-left:8px; border:1px solid #231f20; color:#231f20; line-height:43px; }
+.mypage .password_update .btn_area .btn_wht { float:left; margin-left:8px; border:1px solid #231f20; background:#fff; color:#231f20; line-height:43px; }
 
 /* modify */
 .mypage .modify h2 { font-size:15px; font-weight:600; color:#555555; }
@@ -161,7 +161,7 @@
 .mypage .scrap .calc .bbs_calc_list .result_list li a { display:block; padding:20px 0 20px 40px; width:100%; box-sizing:border-box; }
 .mypage .scrap .calc .bbs_calc_list .result_list li a .tit { font-size:13px; color:#231f20; line-height:15px; max-height:30px;}
 .mypage .scrap .calc .bbs_calc_list .result_list li a .date { margin-top:12px; font-size:13px; color:#807e7e; }
-.mypage .scrap .calc .bbs_calc_list .result_list li label { width:40px; }
+.mypage .scrap .calc .bbs_calc_list .result_list li label { width:40px; height:100%; top:0; left:0; }
 .mypage .scrap .calc .bbs_calc_list .result_list li label:before { left:8px; top:50%; margin-top:-9px; }
 
 /* scrap 매거진 */

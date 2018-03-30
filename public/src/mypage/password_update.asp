@@ -66,8 +66,8 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 									팝업 호출함수 fn.alertOpen('#alert1')
 									#alert1: 비밀번호 불일치
 								-->
-								<a href="javascript:fn.alertOpen('#alert1')" class="btn_gray">변경</a>
-								<a href="javascript:void(0)" class="btn_wht">취소</a>
+								<button href="javascript:fn.alertOpen('#alert1')" class="btn_gray">변경</button>
+								<button href="javascript:void(0)" class="btn_wht">취소</button>
 							</div>
 						</fieldset>
 					</form>
