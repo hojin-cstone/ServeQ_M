@@ -63,7 +63,35 @@ $('#menu .btn_back').click(function(e){
 
 /* MAIN */
 if ($('body').hasClass('main')) {
+    var swiper = new Swiper('.visual_area', {
+        pagination: {
+            el: '.swiper-pagination'
+        },
+    });
 
+    var seminar_list = new Swiper('.seminar_list_inner', {
+        slidesPerView: 'auto'
+    });
+
+    var recipe_list = new Swiper('.recipe_list_inner', {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        centeredSlides: true
+    });
+
+    recipe_list.on('touchMove', function(){
+        $('.recipe_list_inner').addClass('transition');
+    }).on('transitionEnd', function(){
+        $('.recipe_list_inner').removeClass('transition');
+    });
+
+    // 매거진
+    $(document).ready(function(){
+        var $grid =	$('.bbs_masonry_list .result_list').masonry({
+		  itemSelector: '.result_list > li',
+		  gutter: 10
+		});
+    });
 }
 
 /* SUB */

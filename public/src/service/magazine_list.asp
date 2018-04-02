@@ -203,7 +203,7 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 	<!--#include virtual="/inCom/footer.asp"-->
 	<!-- // footer -->
 
-	<script src="/pjtCom/js/lib/masonry.pkgd.min.js"></script>
+	
 	<script>
 	$(document).ready(function(){
 		var $grid =	$('.bbs_masonry_list .result_list').masonry({

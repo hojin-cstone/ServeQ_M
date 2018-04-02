@@ -24,6 +24,7 @@
 <script src="/pjtCom/js/lib/jquery-ui.min.js"></script>
 <script src="/pjtCom/js/lib/iscroll.js"></script>
 <script src="/pjtCom/js/lib/swiper.js"></script>
+<script src="/pjtCom/js/lib/masonry.pkgd.min.js"></script>
 
 
 

@@ -5,5 +5,106 @@
 * Main CSS
 * --------------------------------
 */
+.visual_area { position:relative; width:100%; }
+.visual_area .inner { position:relative; }
+.visual_area img { width:100%; }
+.visual_area .swiper-pagination-bullet { opacity:1; width:8px; height:8px; border:1px solid #fff; background:none; box-sizing:border-box; }
+.visual_area .swiper-pagination-bullet-active { background:#fff; }
 
-img { width:100%; }
+.product_area { margin-top:40px; padding:0 20px; }
+.product_area .header_area { position:relative; text-align:center; }
+.product_area .header_area .tit { font-size:22px; color:#231f20; }
+.product_area .header_area .desc { font-size:13px; line-height:15px; color:#807e7e; margin:11px 0 18px 0; }
+.product_list { font-size:0; text-align:center; }
+.product_list li { display:inline-block; position:relative; width:calc((100% - 10px) / 2); text-align:center; margin:10px 0 0 10px; box-shadow:0 1px 5px rgba(0, 0, 0, 0.08); }
+.product_list li:first-child,
+.product_list li:nth-child(3) { margin-left:0; }
+.product_list li img { width:100%; }
+.product_list .txt_area { position:relative; padding:20px 0; background:#fff; box-sizing:border-box; }
+.product_list .txt_area:after { content:""; position:absolute; top:48px ; left:50%; transform:translateX(-50%); width:17px; height:1px; background:#ce462d; }
+.product_list .txt_area b { font-size:16px; text-align:center; color:#231f20; }
+.product_list .txt_area p { font-size:12px; line-height:15px; color:#555; margin-top:23px; }
+
+.infra_area { margin-top:80px; padding:0 20px 30px; background:url(/pjtCom/images/main/bg_product.jpg) no-repeat center bottom; background-size:100%; }
+.infra_area .header_area { position:relative; text-align:center; }
+.infra_area .header_area .tit { font-size:22px; color:#231f20; }
+.infra_area .header_area .desc { font-size:13px; line-height:15px; color:#807e7e; margin:11px 0 18px 0; }
+.infra_list { overflow:hidden; }
+.infra_list li { position:relative; text-align:center; margin-top:10px; }
+.infra_list li:first-child { margin-top:0; }
+.infra_list li img { width:100%; }
+.infra_list b { position:absolute; top:50%; left:0; transform:translateY(-50%); width:100%; font-size:20px; color:#fff; }
+
+.seminar_area { position:relative; margin-top:50px; /*background:url(/pjtCom/images/main/bg_seminar.jpg) no-repeat 0 0;*/ overflow:hidden; }
+.seminar_area .header_area { position:relative;  text-align:center; margin:0 auto; }
+.seminar_area .header_area .tit { font-size:22px; color:#231f20; }
+.seminar_area .header_area .desc { font-size:13px; line-height:15px; color:#807e7e; margin:11px 0 28px 0; }
+.seminar_area .today { font-size:15px; color:#000; text-align:center; }
+.seminar_area .inner { overflow:hidden; }
+.seminar_area .seminar_list { position:relative; margin:20px auto 0; }
+.seminar_area .seminar_list li { float:left; position:relative; width:135px; }
+.seminar_area .seminar_list li:after { content:""; position:absolute; top:0; left:0; width:1px; height:145px; background:#e8e8e8; }
+.seminar_area .seminar_list li:first-child:after { display:none; }
+.seminar_area .seminar_list li a { display:block; padding:10px 20px 0; box-sizing:border-box; }
+.seminar_area .seminar_list .category { display:block; width:62px; height:17px; text-align:center; line-height:17px; color:#fff; margin:0 auto; border-radius:20px; }
+.seminar_area .seminar_list .category.cooking { background:#e67878; }
+.seminar_area .seminar_list .category.baking { background:#e6c378; }
+.seminar_area .seminar_list .end .category { background:#949494; }
+.seminar_area .seminar_list .date { font-size:37px; text-align:center; line-height:60px; }
+.seminar_area .seminar_list .category.cooking + .date { color:#e67878; }
+.seminar_area .seminar_list .category.baking + .date { color:#e6c378; }
+.seminar_area .seminar_list .end .category + .date { color:#949494; }
+.seminar_area .seminar_list .day { font-weight:600; font-size:10px; text-align:center; color:#949494; }
+.seminar_area .seminar_list .subject { height:32px; font-size:12px; text-align:center; line-height:16px; color:#555; margin-top:17px; }
+.seminar_area .seminar_list .state { display:block; width:72px; height:27px; font-size:10px; text-align:center; line-height:25px; color:#ce462d; margin:20px auto 0; border:1px solid #ce462d;  border-radius:27px; box-sizing:border-box; }
+
+.recipe_area { position:relative; margin-top:80px; overflow:hidden; }
+.recipe_area .header_area { position:relative; text-align:center; margin:0 auto; }
+.recipe_area .header_area .tit { font-size:22px; color:#231f20; }
+.recipe_area .header_area .desc { font-size:13px; line-height:15px; color:#807e7e; margin:11px 0 28px 0; }
+.recipe_area .inner { margin:0 auto; overflow:hidden; }
+.recipe_area .inner:after { content:""; opacity:1; transition-duration:0.3s; position:absolute; top:76px; left:0; width:100%; height:100%; background:url(/pjtCom/images/main/bg_recipe.png) no-repeat center 0; background-size:360px; }
+.recipe_area .inner.transition:after { opacity:0; transition-duration:0s; }
+.recipe_area .recipe_list { position:relative; }
+.recipe_area .recipe_list li { float:left; position:relative; width:230px; }
+.recipe_area .recipe_list li .info { display:block; text-align:center; }
+.recipe_area .recipe_list li .info .img { height:230px; border-radius:10px; overflow:hidden; }
+.recipe_area .recipe_list li .info .category { display:block; width:60px; height:20px; text-align:center; line-height:18px; border-radius:20px; margin:20px auto 0; box-sizing:border-box; }
+.recipe_area .recipe_list li .info .category.western { color:#e10a00; border:1px solid #e60800; }
+.recipe_area .recipe_list li .info .category.chinese { color:#261000; border:1px solid #3b2515; }
+.recipe_area .recipe_list li .info .category.baking { color:#d0a82c; border:1px solid #ebca76; }
+.recipe_area .recipe_list li .info .sort { display:inline-block; font-size:10px; color:#949494;}
+.recipe_area .recipe_list li .info .name { font-weight:600; font-size:20px; color:#555; margin:10px 0 9px; }
+.recipe_area .recipe_list li .menu { opacity:0; transition-duration:0.5s; position:absolute; top:0; left:0; width:100%; height:230px; font-size:0; border-radius:10px; background:rgba(0, 0, 0, 0.5); overflow:hidden; }
+.recipe_area .recipe_list li .menu [class^="btn"] { color:#fff; box-sizing:border-box; background:none; }
+.recipe_area .recipe_list li .menu .btn_recipe { width:100%; height:190px; font-size:22px; line-height:23px; padding-top:71px; box-sizing:border-box;}
+.recipe_area .recipe_list li .menu .btn_recipe b { display:block; }
+.recipe_area .recipe_list li .menu .btn_recipe:before { display:none; }
+.recipe_area .recipe_list li .menu .btn_recipe:after { display:none; }
+.recipe_area .recipe_list li .menu .btn_calculator { width:50%; height:40px; line-height:40px; font-size:12px; background:rgba(255, 226, 207, 0.5); }
+.recipe_area .recipe_list li .menu .btn_counsel { width:50%; height:40px; line-height:40px; font-size:12px; border-left:1px solid #d0c9c4; background:rgba(255, 226, 207, 0.5); }
+.recipe_area .recipe_list li[class*="active"] .menu { opacity:1; }
+
+.magazine_area { position:relative; margin-top:80px; }
+.magazine_area:after { content:""; display:block; clear:both; }
+.magazine_area .header_area { position:relative; text-align:center; margin:0 auto; }
+.magazine_area .header_area .tit { font-size:22px; color:#231f20; }
+.magazine_area .header_area .desc { font-size:13px; line-height:15px; color:#807e7e; margin:11px 0 28px 0; }
+
+.bottom_area { margin-top:16px; padding:0 20px; }
+.bottom_area .inner { overflow:hidden; }
+.bottom_area .menu_list { }
+.bottom_area .menu_list li { float:left; width:25%; }
+.bottom_area .menu_list li:first-child { margin-left:0; }
+.bottom_area .menu_list a { display:block; font-weight:400; font-size:13px; text-align:center; color:#555; }
+.bottom_area .menu_list a:before { content:""; display:block; height:38px; margin:0 auto 28px; background:url(/pjtCom/images/main/icon_bottom.png) no-repeat 0 0; background-size:150px; }
+.bottom_area .menu_list .calculator a:before { width:36px; background-position:0 0; }
+.bottom_area .menu_list .qna a:before { width:36px; background-position:-41px 0; }
+.bottom_area .menu_list .form a:before { width:32px; background-position:-82px 0; }
+.bottom_area .menu_list .event a:before { width:31px; background-position:-119px 0; }
+
+.notice_area { margin-top:25px; padding:0 20px; border-top:1px solid #e5e5e5; overflow:hidden; }
+.notice_area .header_area { float:left; width:62px; }
+.notice_area .header_area .tit { font-weight:400; font-size:12px; color:#555; height:32px; line-height:32px; }
+.notice_area .subject { float:left; position:relative; width:calc(100% - 62px); height:32px; font-size:12px; line-height:32px; text-align:center; color:#555; padding-right:17px; box-sizing:border-box; }
+.notice_area .subject:after { content:""; position:absolute; top:50%; right:0; transform:translateY(-50%); width:7px; height:12px; background:url(/pjtCom/images/main/icon_notice_arrow.png) no-repeat 0 0; background-size:7px; }
