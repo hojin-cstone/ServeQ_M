@@ -37,7 +37,7 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 		<div id="contents" class="<%= path2dir %>">
 			<div class="<%= path3dir %>">
 				<section class="section">
-					<h2 class="term_tit">이용약관</h2>
+					<h2 class="term_tit">개인정보취급방침</h2>
 					<div class="term_area">
 						1. 총칙<br>
 						<br>
