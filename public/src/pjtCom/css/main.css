@@ -5,7 +5,7 @@
 * Main CSS
 * --------------------------------
 */
-.visual_area { position:relative; width:100%; }
+.visual_area { position:relative; width:100%; overflow:hidden; }
 .visual_area .inner { position:relative; }
 .visual_area img { width:100%; }
 .visual_area .swiper-pagination-bullet { opacity:1; width:8px; height:8px; border:1px solid #fff; background:none; box-sizing:border-box; }
