@@ -5,13 +5,24 @@
     <!-- <a href="#header" class="btn_top">상단으로</a> -->
 
     <div class="inner">
-        <img src="/pjtCom/images/temp/footer.jpg" alt="" style="width:100%; max-width:360px;">
-
-        <!-- <ul class="menu">
+        <ul class="menu">
             <li><a href="/etc/terms.asp">이용약관</a></li>
             <li><a href="/etc/privacy.asp"><b>개인정보취급방침</b></a></li>
             <li><a href="/etc/sitemap.asp">사이트맵</a></li>
         </ul>
+
+        <ul class="social">
+            <li class="instagram">serveq_official</li>
+            <li class="kakao">@<b>서브큐</b> 친구추가 하세요</li>
+        </ul>
+
+        <address class="address">
+            <ul>
+                <li>(주) 삼양사 : 경기도 성남시 분당구 판교로 295</li>
+                <li>일반문의 : 02-2157-9114</li>
+                <li>제품/상품  관련  문의 : 080-023-3399</li>
+            </ul>
+        </address>
 
         <div class="family">
             <p>패밀리 사이트</p>
@@ -26,15 +37,7 @@
             </ul>
         </div>
 
-        <address class="address">
-            <ul>
-                <li>(주) 삼양사 : 경기도 성남시 분당구 판교로 295</li>
-                <li>일반문의 : 02-2157-9114</li>
-                <li>제품/상품  관련  문의 : 080-023-3399</li>
-            </ul>
-        </address>
-
-        <small class="copyright">COPYRIGHT 2018 SAMYANG CORP, ALL RIGHTS RESERVED</small> -->
+        <small class="copyright">COPYRIGHT 2018 SAMYANG CORP, ALL RIGHTS RESERVED</small>
     </div>
 </footer>
 

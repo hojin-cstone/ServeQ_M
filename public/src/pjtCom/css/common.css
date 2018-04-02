@@ -348,7 +348,7 @@ input[type=radio].rdo_type1:checked + label:before { background-position:0 -45px
 #header { position:absolute; z-index:99; width:100%; height:50px; border-bottom:1px solid rgba(218, 218, 218, 0.25) }
 #header > .inner { height:100%; }
 #header > .inner .logo { position:absolute; top:13px; left:20px; font-size:0; }
-#header > .inner .logo a { display:inline-block; width:63px; height:24px; vertical-align:middle; text-indent:-9999px; background:url(/pjtCom/images/common/logo.png) no-repeat 0 0; background-size:63px; }
+#header > .inner .logo a { display:inline-block; width:63px; height:24px; vertical-align:middle; text-indent:-9999px; background:url(/pjtCom/images/common/logo.png) no-repeat 0 0; background-size:100px; }
 #header > .inner [class^="btn_"] { position:absolute; top:8px; width:38px; height:35px; text-indent:-9999px; }
 #header > .inner .btn_search { right:48px; }
 #header > .inner .btn_menu { right:10px; }
@@ -387,7 +387,7 @@ input[type=radio].rdo_type1:checked + label:before { background-position:0 -45px
 
 .sub #header > .inner .btn_search:before { width:16px; background-position:0 -18px; }
 .sub #header > .inner .btn_menu:before { width:18px; background-position:-18px -18px; }
-.sub #header > .inner .logo a { display:inline-block; width:63px; height:24px; vertical-align:middle; text-indent:-9999px; background:url(/pjtCom/images/common/logo.png) no-repeat 0 -28px; background-size:63px; }
+.sub #header > .inner .logo a { display:inline-block; width:63px; height:24px; vertical-align:middle; text-indent:-9999px; background:url(/pjtCom/images/common/logo.png) no-repeat 0 -28px; background-size:100px; }
 
 
 
@@ -408,6 +408,24 @@ input[type=radio].rdo_type1:checked + label:before { background-position:0 -45px
 * footer
 * --------------------------------
 */
-#footer { position:relative; height:355px; font-family:'Malgun Gothic', sans-serif; text-align:center; margin-top:-355px; box-sizing:border-box; background:#f6f6f6;}
-#footer .inner { position:relative; height:100%; margin:0 auto; box-sizing:border-box; }
-/* #footer .inner:before { content:""; position:absolute; top:40; left:50px; width:89px; height:34px; background:url(/pjtCom/images/common/logo.png) no-repeat 0 -84px; } */
+#footer { position:relative; height:357px; font-family:'Malgun Gothic', sans-serif; text-align:center; margin-top:-357px; padding:21px 0 12px; box-sizing:border-box; background:#e7e7e9;}
+#footer .inner {  }
+#footer .inner:before { content:""; position:absolute; top:50px; left:50%; transform:translateX(-50%); width:95px; height:35px; background:url(/pjtCom/images/common/logo.png) no-repeat 0 -57px; background-size:100px; }
+#footer .social { text-align:center; margin-top:75px; }
+#footer .social li { display:inline-block; font-size:12px; color:#666; margin-left:10px; }
+#footer .social li:first-child { margin-left:0; }
+#footer .social li:before { content:""; display:inline-block; height:20px; vertical-align:middle; margin-right:4px; background:url(/pjtCom/images/common/icon_footer_social.png) no-repeat 0 0; background-size:47px; }
+#footer .social .instagram:before { width:20px; background-position:0 0; }
+#footer .social .kakao:before { width:22px; background-position:-25px 0; }
+#footer .menu { font-size:0; text-align:center; }
+#footer .menu li { display:inline-block; font-size:12px; color:#807e7e; margin-left:30px; }
+#footer .menu li:first-child { margin-left:0; }
+#footer .address { font-size:12px; line-height:18px; color:#807e7e; margin-top:23px; }
+#footer .family { position:relative; width:190px; font-family:'NanumSquare', sans-serif; margin:0 auto; }
+#footer .family:before { content:""; display:block; width:178px; height:22px; margin:27px auto; background:url(/pjtCom/images/common/icon_footer_family.png) no-repeat center 0; background-size:178px; }
+#footer .family p { width:100%; height:36px; font-weight:600; font-size:15px; line-height:36px; text-align:left; padding-left:21px; border:1px solid #bfbfbf; background:url(/pjtCom/images/common/icon_footer_family_arrow.png) no-repeat 167px center; background-size:7px; box-sizing:border-box; cursor:pointer; }
+#footer .family ul { display:none; position:absolute; bottom:35px; left:0; width:100%; text-align:left; border:1px solid #bfbfbf; background:#fff; box-sizing:border-box; overflow:hidden; }
+#footer .family li { height:36px; line-height:36px; }
+#footer .family li a { display:block; padding-left:15px; }
+#footer .family.on ul { display:block; }
+#footer .copyright { display:inline-block; font-size:9px; color:#807e7e; margin-top:18px; }

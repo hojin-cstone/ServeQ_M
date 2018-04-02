@@ -48,7 +48,7 @@ If path3tit = "" Then description=description+path2tit Else description=descript
 				<section class="product_area">
 					<header class="header_area">
 						<h2 class="tit">PRODUCT</h2>
-						<p class="desc">모두가 믿고 먹을 수 있는 다양한 제품군을 제공합니다.</p>
+						<p class="desc">모두가 믿고 먹을 수 있는 다양한<br>제품군을 제공합니다.</p>
 					</header>
 
 					<ul class="product_list">
@@ -96,7 +96,7 @@ If path3tit = "" Then description=description+path2tit Else description=descript
 				<section class="infra_area">
 					<header class="header_area">
 						<h2 class="tit">INFRA</h2>
-						<p class="desc">서브큐의 인프라는 식품 안전성과 전문성을 위해 노력하고 있습니다.</p>
+						<p class="desc">서브큐의 인프라는 식품 안전성과 전문성을 위해<br>노력하고 있습니다.</p>
 					</header>
 
 					<ul class="infra_list">
@@ -196,7 +196,7 @@ If path3tit = "" Then description=description+path2tit Else description=descript
 				<section class="recipe_area">
 					<header class="header_area">
 						<h2 class="tit">CHEF RECIPE</h2>
-						<p class="desc">서브큐 제품을 활용한 레시피 메뉴를 소개합니다.</p>
+						<p class="desc">서브큐 제품을 활용한<br>레시피 메뉴를 소개합니다.</p>
 					</header>
 
 					<div class="recipe_list_wrap">
@@ -297,7 +297,7 @@ If path3tit = "" Then description=description+path2tit Else description=descript
 				<section class="magazine_area">
 					<header class="header_area">
 						<h2 class="tit">MAGAZINE</h2>
-						<p class="desc">업계 최신 트렌드 및 뉴스를 알려드립니다.</p>
+						<p class="desc">모두가 믿고 먹을 수 있는 다양한<br>제품군을 제공합니다.</p>
 					</header>
 
 					<div class="bbs_masonry_list result_area">

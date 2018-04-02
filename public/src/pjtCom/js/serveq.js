@@ -6,6 +6,11 @@
 
 /* COMMON */
 
+// FOOTER 패밀리사이트
+$('#footer .family').click(function(){
+    $(this).toggleClass('on');
+});
+
 // 앵커이동 X
 $('a[href="#"]').click(function(e){
     e.preventDefault();
