@@ -1,0 +1,78 @@
+/* 세미나 목록 */
+.service .seminar .txt { font-size:13px; text-align:center; }
+.service .seminar .sort_area { margin:0 auto; }
+.service .seminar .sort_area .date_area { position:relative; width:118px; margin:23px auto 18px; }
+.service .seminar .sort_area .date { font-size:22px; text-align:center; line-height:48px; color:#555; }
+.service .seminar .sort_area .date_area a { position:absolute; top:0; width:12px; height:100%; text-indent:-9999px; }
+.service .seminar .sort_area .date_area a:after { content:""; position:absolute; top:50%; transform:translateY(-50%); transform-origin:50% 50%; width:6px; height:10px; background:url(/pjtCom/mobile/images/sub/btn_seminar.png) no-repeat 0 0; background-size:6px; }
+.service .seminar .sort_area .date_area a.btn_prev { left:0; }
+.service .seminar .sort_area .date_area a.btn_next { right:0; }
+.service .seminar .sort_area .date_area a.btn_prev:after { left:0; transform:translateY(-50%) rotate(180deg); }
+.service .seminar .sort_area .date_area a.btn_next:after { right:0; }
+.service .seminar .sort_area .category_area { padding:0 20px; }
+.service .seminar .sort_area .category_area a { float:left; height:44px; font-size:16px; line-height:44px; color:#807e7e; margin-left:5px; border:1px solid #e4e4e4; }
+.service .seminar .sort_area .category_area a.btn_all { width:calc((100% - 10px - 40.625%) / 2); margin-left:0; }
+.service .seminar .sort_area .category_area a.btn_baking { width:40.625%; }
+.service .seminar .sort_area .category_area a.btn_cooking { width:calc((100% - 10px - 40.625%) / 2); }
+.service .seminar .sort_area .category_area a.now { color:#231f20; border:1px solid #807e7e; background:#e4e4e4; }
+.service .seminar .sort_area .region_area { margin-top:10px; padding:0 20px; }
+.service .seminar .sort_area .region_area [id^="select_region"] { float:left; width:calc(100% - 80px - 5px); height:44px; }
+.service .seminar .sort_area .region_area .btn_search { float:left; width:80px; height:44px; font-size:16px; color:#fff; margin-left:5px; background:#555; }
+.service .seminar .calendar_area { margin-top:30px; padding:0 20px; }
+.service .seminar .calendar_area .calendar { width:100%; }
+.service .seminar .calendar_area .calendar th { height:41px; font-weight:400; font-size:15px; color:#81674a; box-sizing:border-box;}
+.service .seminar .calendar_area .calendar td { position:relative; height:45px; text-align:center; vertical-align:top; padding-top:13px; box-sizing:border-box; }
+.service .seminar .calendar_area .calendar td:first-child { border-left:none; }
+.service .seminar .calendar_area .calendar td .date { font-family:'Malgun Gothic', sans-serif; font-weight:500; font-size:15px; color:#807e7e; }
+.service .seminar .calendar_area .calendar .another .date { opacity:0.5; }
+.service .seminar .calendar_area .calendar .schedule .date { color:#231f20; }
+.service .seminar .calendar_area .calendar .list { font-size:0; margin-top:5px; }
+.service .seminar .calendar_area .calendar .list span { display:inline-block; width:5px; height:5px; margin-left:3px; border-radius:100%; }
+.service .seminar .calendar_area .calendar .list span:first-child { margin-left:0; }
+.service .seminar .calendar_area .calendar .list span.baking { background:#e67878; }
+.service .seminar .calendar_area .calendar .list span.cooking { background:#e6c378; }
+.service .seminar .day_list { margin-top:20px; padding:0 20px; }
+.service .seminar .day_list > li { position:relative; border-top:1px solid #949494; box-sizing:border-box; overflow:hidden; }
+.service .seminar .day_list > li:last-child { border-bottom:1px solid #949494; }
+.service .seminar .day_list > li:first-child:after { display:none; }
+.service .seminar .day_list .date { float:left; width:54px; font-size:16px; color:#555; margin-top:15px; }
+.service .seminar .day_list .schedule_list { float:left;  width:calc(100% - 54px); }
+.service .seminar .day_list .schedule_list li { padding:15px 0; border-top:1px solid #e4e4e4; }
+.service .seminar .day_list .schedule_list li:first-child { border-top:0; }
+.service .seminar .day_list .schedule_list a { display:block; overflow:hidden; }
+.service .seminar .day_list .schedule_list .info_area { display:block; }
+.service .seminar .day_list .schedule_list .info_area .sort_area { display:block; margin:0; overflow:hidden; }
+.service .seminar .day_list .schedule_list small { float:left; height:20px; font-size:12px; text-align:center; line-height:20px; margin-left:3px; border-radius:20px; box-sizing:border-box; }
+.service .seminar .day_list .schedule_list small:first-child { margin-left:0; }
+.service .seminar .day_list .schedule_list small.category { width:80px; color:#fff; }
+.service .seminar .day_list .schedule_list small.category.cooking { background:#e67878; }
+.service .seminar .day_list .schedule_list small.category.baking { background:#e6c378; }
+.service .seminar .day_list .schedule_list small.region { width:70px; border:1px solid #ece9e6; }
+.service .seminar .day_list .schedule_list small.state { width:70px; }
+.service .seminar .day_list .schedule_list small.state.end { color:#949494; border:1px solid #949494; }
+.service .seminar .day_list .schedule_list small.state.ing { color:#ce462d; border:1px solid #ce462d; }
+.service .seminar .day_list .schedule_list .subject { display:block; width:100%; height:17px; font-size:14px; line-height:17px; color:#555; margin-top:10px; }
+.service .seminar .btn_more { display:block; width:125px; height:44px; font-size:16px; color:#fff; margin:50px auto 0; background:#555; }
+
+/* 세미나 상세 */
+.service .seminar .view_area .tit { padding-top:8px; }
+.service .seminar .view_area .info_area { margin-bottom:0; }
+.service .seminar .view_area .info_area > div { margin-top:8px; overflow:hidden; }
+.service .seminar .view_area .info_area small { float:left; height:20px; font-size:12px; text-align:center; line-height:20px; margin-left:3px; border-radius:20px; box-sizing:border-box; }
+.service .seminar .view_area .info_area small:first-child { margin-left:0; }
+.service .seminar .view_area .info_area small.category { width:80px; color:#fff; }
+.service .seminar .view_area .info_area small.category.cooking { background:#e67878; }
+.service .seminar .view_area .info_area small.category.baking { background:#e6c378; }
+.service .seminar .view_area .info_area small.region { width:70px; border:1px solid #ece9e6; }
+.service .seminar .view_area .info_area small.state { width:70px; }
+.service .seminar .view_area .info_area small.state.end { color:#949494; border:1px solid #949494; }
+.service .seminar .view_area .info_area small.state.ing { color:#ce462d; border:1px solid #ce462d; }
+.service .seminar .view_area .info_area dl { overflow:hidden; }
+.service .seminar .view_area .info_area dt { clear:inherit; float:left; }
+.service .seminar .view_area .info_area dt:first-child { width:40px; }
+.service .seminar .view_area .info_area dd { float:left; }
+.service .seminar .view_area .info_area dd:nth-of-type(1) { margin-right:34px; }
+.service .seminar .view_area .info_area dt:nth-of-type(3) { clear:both; }
+.service .seminar .view_area .edit_area { margin:20px 0 0; }
+.service .seminar .view_area .btn_apply,
+.service .seminar .view_area .btn_cancel { display:block; width:155px; height:44px; font-size:16px; color:#fff; margin:30px auto 50px; background:#ce462e; }

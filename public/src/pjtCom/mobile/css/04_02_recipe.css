@@ -1,0 +1,94 @@
+/* 레시피 메인 */
+.service .recipe .recipe_type { padding:0 20px; }
+.service .recipe .desc { font-size:16px; line-height:19px; text-align:center; color:#231f20; }
+.service .recipe .recipe_type { margin-top:18px; }
+.service .recipe .recipe_type li { position:relative; text-align:center; margin-top:15px; }
+.service .recipe .recipe_type li:first-child { margin-top:0; }
+.service .recipe .recipe_type li.counsel { width:100%; text-align:left; }
+.service .recipe .recipe_type li a { display:block; background:#999; }
+.service .recipe .recipe_type li .img { width:100%; }
+.service .recipe .recipe_type li.counsel a { width:100%; }
+.service .recipe .recipe_type .txt_area { position:absolute; top:50%; left:0; transform:translateY(-50%); width:100%; color:#fff; }
+.service .recipe .recipe_type .txt_area .item { font-weight:600; font-size:22px; }
+.service .recipe .recipe_type .txt_area .item:after { content:""; display:block; width:18px; height:2px; background:#fff; margin:6px auto 0; }
+.service .recipe .recipe_type .txt_area .txt { font-size:13px; line-height:15px; margin-top:8px; }
+.service .recipe .recipe_type li.counsel:after { content:""; position:absolute; top:50%; right:20px; transform:translateY(-50%); width:19px; height:36px; background:url(/pjtCom/mobile/images/sub/icon_recipe_arrow.png) no-repeat 0 0; background-size:19px; }
+.service .recipe .recipe_type li.counsel .txt_area { padding-left:20px; box-sizing:border-box; }
+.service .recipe .recipe_type li.counsel .txt_area .item { font-size:20px; }
+.service .recipe .recipe_type li.counsel .txt_area .item:after { display:none; }
+.service .recipe .recipe_type li.counsel .txt_area .txt { font-size:13px; line-height:18px; margin-top:7px; }
+
+/* 레시피 리스트 */
+/* .service #contents.recipe { padding-top:0; } */
+.service .recipe .sort_list { height:38px; margin:-30px 0 25px; border-bottom:1px solid #e4e4e4; box-sizing:border-box; overflow:hidden; }
+.service .recipe .sort_list li { float:left; width:90px; }
+.service .recipe .sort_list li a { display:block; height:37px; font-size:13px; text-align:center; line-height:37px; }
+.service .recipe .sort_list li a.now { font-weight:600; }
+.service .recipe .sort_list li span { display:inline-block; }
+.service .recipe .sort_list li a.now span { display:inline-block; position:relative; padding:0 2px; }
+.service .recipe .sort_list li a.now span:after { content:""; position:absolute; bottom:0; left:0; width:100%; height:2px; background:#ce462e; }
+.service .recipe .bbs_gallery_list .result_list a { padding:27px; }
+
+/* 레시피 상세 */
+.service .recipe .view_area { margin-top:-30px; }
+.service .recipe .view_area .txt_area .sort { width:33px; height:18px; font-size:10px; text-align:center; line-height:17px; padding:0 11px; border:1px solid #bbb; box-sizing:border-box; }
+.service .recipe .view_area .txt_area .btn_area .txt { position:absolute; top:58px; left:20px; font-size:12px; line-height:16px; color:#949494; }
+.service .recipe .view_area .txt_area .btn_area .txt:before { content:""; display:inline-block; width:16px; height:16px; vertical-align:middle; margin-right:9px; background:url(/pjtCom/mobile/images/common/icon_mark.png) no-repeat 0 0; background-size:37px; }
+.service .recipe .view_area .txt_area .btn_area .btn_calculator { color:#fff; background:#d3472d; }
+.service .recipe .view_area .txt_area .btn_area .btn_counsel { color:#231f20; background:#e5e5e5; }
+.service .recipe .view_area .txt_area .btn_area .btn_calculator:before { width:16px; background-position:0 0; }
+.service .recipe .view_area .txt_area .btn_area .btn_counsel:before { width:15px; background-position:-21px 0; }
+.service .recipe .view_area .tab_menu { text-align:center; margin:37px 0 25px; }
+.service .recipe .view_area .tab_menu a { display:inline-block; position:relative; height:26px; font-size:16px; line-height:26px; color:#555555; margin-left:10px; padding:0 3px; }
+.service .recipe .view_area .tab_menu a.on { font-weight:600; color:#231f20; }
+.service .recipe .view_area .tab_menu a.on:after { content:""; position:absolute; bottom:0; left:0; width:100%; height:2px; background:#d0442b; }
+.service .recipe .view_area .tab_menu a:first-child { margin-left:0; }
+.service .recipe .view_area .ingredient { padding:0 20px; }
+.service .recipe .view_area .ingredient table { font-family:'Malgun Gothic', sans-serif; }
+.service .recipe .view_area .ingredient table th { height:30px; font-weight:normal; font-size:12px; text-align:left; color:#81674a; padding-left:15px; background:#f5f4f2; }
+.service .recipe .view_area .ingredient table td { font-size:12px; line-height:16px; color:#231f20; padding:7px 0 7px 15px; border-bottom:1px solid #ece9e6; }
+.service .recipe .view_area .make { font-family:'Malgun Gothic', sans-serif; margin:25px auto 0; padding:0 20px; }
+.service .recipe .view_area .make section { margin-top:20px; }
+.service .recipe .view_area .make section:first-child { margin-top:0; }
+.service .recipe .view_area .make h4 { font-size:15px; color:#ce462e; }
+.service .recipe .view_area .make ol { counter-reset:number; }
+.service .recipe .view_area .make li { font-size:12px; line-height:17px; margin-top:17px; }
+.service .recipe .view_area .make li:before { content:counter(number)')'; counter-increment:number; margin-right:8px; }
+.service .recipe .view_area .make .caution { display:block; font-size:13px; color:#231f20; margin-top:17px; }
+.service .recipe .view_area .make .caution:before { content:"*"; font-size:13px; color:#231f20; }
+
+.service .recipe .view_area .use_area { margin-top:60px; overflow:hidden; }
+.service .recipe .view_area .use_area .tit { font-size:16px; color:#231f20; padding:0 20px;  }
+.service .recipe .view_area .use_area .product_area { position:relative; margin-top:10px; padding:0 20px; box-sizing:border-box; }
+.service .recipe .view_area .use_area .product_area .inner { overflow:visible !important; }
+.service .recipe .view_area .use_area .product_list { position:relative; left:0; height:100%; word-break:break-all; word-wrap: break-word;}
+.service .recipe .view_area .use_area li { float:left; width:142px; padding:27px; border:1px solid #edeae8; box-sizing:border-box; }
+.service .recipe .view_area .use_area .img { display:inline-block; width:100%; }
+.service .recipe .view_area .use_area .name { display:block; height:26px; font-size:9px; line-height:13px; text-align:center; margin-top:10px; }
+
+.service .recipe .view_area .recommend_area { margin-top:60px; padding:0; overflow:hidden; }
+.service .recipe .view_area .recommend_area .tit { font-size:16px; color:#231f20; padding:0 20px; }
+.service .recipe .view_area .recommend_area .product_area { position:relative; margin-top:10px; padding:0 20px; box-sizing:border-box; }
+.service .recipe .view_area .recommend_area .product_area .inner { overflow:visible !important; }
+.service .recipe .view_area .recommend_area .recommend_list { position:relative; }
+.service .recipe .view_area .recommend_area li { width:142px; margin:0; }
+.service .recipe .view_area .recommend_area li a { width:142px; }
+.service .recipe .view_area .recommend_area .name { font-size:10px; margin-top:10px; }
+.service .recipe .view_area .btn_list { display:block; width:125px; height:44px; font-size:16px; color:#fff; margin:60px auto 0; background:#555; }
+
+/* 1:1 상담 */
+.service .recipe .counsel .result_area .btn_regist { display:block; height:45px; font-size:16px; color:#fff; margin:40px 0; background:#ce462d; }
+.service .recipe .counsel .view_area { margin-top:0; }
+.service .recipe .counsel .view_area .txt_area .sort { width:auto; height:auto; font-size:12px; padding:0; border:none; }
+.service .recipe .counsel .view_area .txt_area .name { height:auto; font-size:13px; line-height:inherit; margin-top:10px; }
+.service .recipe .counsel .view_area .info_area { margin-bottom:20px; }
+.service .recipe .counsel .view_area .info_area .tit { font-size:13px; }
+.service .recipe .counsel .view_area .info_area .tit.answer span { position:relative; display:inline-block; padding-right:55px; }
+.service .recipe .counsel .view_area .info_area .tit.answer span:after { content:"답변완료"; position:absolute; top:0; right:0; width:40px; height:16px; font-size:8px; vertical-align:top; text-align:center; line-height:16px; color:#fff; margin-left:15px; border-radius:16px; background:#ce462e; }
+.service .recipe .counsel .view_area .edit_area { margin-top:0; }
+.service .recipe .counsel .view_area .btn_area { font-size:0; margin-top:60px; padding:0 20px; }
+.service .recipe .counsel .view_area .btn_area [class^="btn"] { display:inline-block; width:calc((100% - 20px) / 3); height:44px; font-size:16px; color:#fff; margin:0 0 0 10px; }
+.service .recipe .counsel .view_area .btn_area [class^="btn"]:first-child { margin-left:0; }
+.service .recipe .counsel .view_area .btn_area .btn_modify { background:#ce462e; }
+.service .recipe .counsel .view_area .btn_area .btn_del { color:#231f20; border:1px solid #231f20; background:#fff; }
+.service .recipe .counsel .view_area .btn_area .btn_list { background:#555; }

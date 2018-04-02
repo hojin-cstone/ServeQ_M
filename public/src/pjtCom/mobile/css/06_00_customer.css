@@ -1,0 +1,70 @@
+/**
+* --------------------------------
+* 고객센터 CSS
+* --------------------------------
+*/
+
+
+/* faq */
+.customer .faq .faq_list { padding:10px 20px 0; }
+.customer .faq .faq_list p { font-size:13px; color:#807e7f; }
+.customer .faq .faq_list .tbl_list { margin-top:10px; }
+.customer .faq .faq_list .tbl_list thead { border-top:1px solid #221e1f; }
+.customer .faq .faq_list .tbl_list thead th { background:#e1e1e1; text-align:center; font-size:13px; line-height:32px; }
+.customer .faq .faq_list .tbl_list tbody tr { border-bottom:1px solid #e4e4e4; }
+.customer .faq .faq_list .tbl_list tbody td { text-align:center; }
+.customer .faq .faq_list .tbl_list tbody td .list_tit { position:relative; display:inline-block; width:auto; font-size:13px; line-height:15px; padding:10px 20px; text-align:left; box-sizing:border-box; }
+.customer .faq .faq_list .tbl_list tbody td { font-size:13px; }
+.customer .faq .faq_list .tbl_list tbody td .list_tit { width:100%; }
+.customer .faq .faq_list .tbl_list tbody tr:nth-child(2n-1) { cursor:pointer; }
+.customer .faq .faq_list .tbl_list tbody tr:nth-child(2n) { border-bottom:none; }
+.customer .faq .faq_list .tbl_list tbody tr:nth-child(2n) td { background:#f7f7f7; overflow:hidden; }
+.customer .faq .faq_list .tbl_list tbody tr:nth-child(2n) td span { display:block; width:100%; margin-top:-100%; padding:10px 20px 10px 105px; box-sizing:border-box; text-align:left; line-height:15px; -webkit-transition:0.6s; transition:0.6s; }
+
+/* qna_list */
+.customer .qna_list .result_area .btn_regist { display:block; height:45px; font-size:16px; color:#fff; margin:40px 0; background:#ce462d; }
+.customer .qna_list .result_area .txt_area .subject:after {content:""; display:none; position:absolute; right:0; top:-1px; height:13px; background:url('/pjtCom/mobile/images/common/icon_qna.png') no-repeat 0 0; background-size:60px; border-radius:0; }
+.customer .qna_list .result_area .txt_area .subject.rock { padding-right:22px; }
+.customer .qna_list .result_area .txt_area .subject.rock:after { display:inline-block; width:10px; background-position-x:0px; }
+.customer .qna_list .result_area .txt_area .subject.answer { padding-right:53px; }
+.customer .qna_list .result_area .txt_area .subject.answer:after { display:inline-block; width:40px; background-position-x:-20px; }
+.customer .qna_list .result_area .txt_area .subject.rock.answer { padding-right:72px; }
+.customer .qna_list .result_area .txt_area .subject.rock.answer:after { display:inline-block; width:60px; background-position-x:0; }
+
+.customer .qna_view .view_area .txt_area .sort { width:auto; height:auto; font-size:12px; padding:0; border:none; }
+.customer .qna_view .view_area .txt_area .name { height:auto; font-size:13px; line-height:inherit; margin-top:10px; }
+.customer .qna_view .view_area .info_area { margin-bottom:20px; }
+.customer .qna_view .view_area .info_area .tit { font-size:13px; }
+.customer .qna_view .view_area .info_area .tit.answer span { position:relative; display:inline-block; }
+
+.customer .qna_view .view_area .edit_area { margin-top:0; }
+.customer .qna_view .view_area .btn_area { font-size:0; margin-top:60px; padding:0 20px; }
+.customer .qna_view .view_area .btn_area [class^="btn"] { display:inline-block; width:calc((100% - 20px) / 3); height:44px; font-size:16px; color:#fff; margin:0 0 0 10px; }
+.customer .qna_view .view_area .btn_area [class^="btn"]:first-child { margin-left:0; }
+.customer .qna_view .view_area .btn_area .btn_modify { background:#ce462e; }
+.customer .qna_view .view_area .btn_area .btn_del { color:#231f20; border:1px solid #231f20; background:#fff; }
+.customer .qna_view .view_area .btn_area .btn_list { background:#555; }
+
+.customer .qna_list .result_area .txt_area .subject span:after {content:""; display:none; position:absolute; right:0; top:-1px; height:13px; background:url('/pjtCom/mobile/images/common/icon_qna.png') no-repeat 0 0; background-size:60px; border-radius:0; }
+.customer .qna_list .result_area .txt_area .subject.rock span { padding-right:22px; }
+.customer .qna_list .result_area .txt_area .subject.rock span:after { display:inline-block; width:10px; background-position-x:0px; }
+.customer .qna_list .result_area .txt_area .subject.answer span { padding-right:53px; }
+.customer .qna_list .result_area .txt_area .subject.answer span:after { display:inline-block; width:40px; background-position-x:-20px; }
+.customer .qna_list .result_area .txt_area .subject.rock.answer { padding-right:72px; }
+.customer .qna_list .result_area .txt_area .subject.rock.answer:after { display:inline-block; width:60px; background-position-x:0; }
+
+.customer .qna_view .view_area .info_area .tit span:after { content:""; display:none; position:absolute; right:0; top:50%; margin-top:-7px; height:13px; background:url('/pjtCom/mobile/images/common/icon_qna.png') no-repeat 0 0; background-size:60px; border-radius:0; }
+.customer .qna_view .view_area .info_area .tit.answer span { padding-right:52px; }
+.customer .qna_view .view_area .info_area .tit.answer span:after { display:inline-block; width:40px; background-position-x:-20px; }
+.customer .qna_view .view_area .info_area .tit.rock span { padding-right:22px; }
+.customer .qna_view .view_area .info_area .tit.rock span:after { display:inline-block; width:10px; background-position-x:0px; }
+.customer .qna_view .view_area .info_area .tit.rock.answer span { padding-right:72px; }
+.customer .qna_view .view_area .info_area .tit.rock.answer span:after { display:inline-block; width:60px; background-position-x:0; }
+
+/* qna_edit */
+.customer .qna_edit .select_area { display:none; font-size:13px; color:#555; margin:25px 0 15px; overflow:hidden; }
+.customer .qna_edit .select_area dt { float:left; width:75px; line-height:40px; clear:both; }
+.customer .qna_edit .select_area dd { float:left; width:calc(100% - 75px); }
+.customer .qna_edit .select_area dd label { margin-right:23px; }
+.customer .qna_edit .select_area dd select { border:1px solid #e4e4e4; color:#949494; }
+.customer .qna_edit .select_area.show { display:block; }

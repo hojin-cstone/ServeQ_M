@@ -1,0 +1,34 @@
+/**
+* --------------------------------
+* FOOTER CSS
+* --------------------------------
+*/
+
+.etc .section { padding:0 20px; box-sizing:border-box; }
+.etc .term_tit { font-size:16px; font-weight:600; color:#231f20; }
+.etc .term_area { margin-top:8px; max-height:400px; height:calc((100vw - 40px)*1.25); padding:20px 14px; box-sizing:border-box; overflow-y:scroll; border:1px solid #e4e4e4; font-size:13px; line-height:18px; }
+
+.etc .sitemap h2 { color:#231f20; }
+.etc .sitemap .depth1 { margin-top:26px; }
+.etc .sitemap .depth1:after { content:''; display:block; clear:both; }
+.etc .sitemap .depth1 > li { float:left; width:calc(50% - 10px); padding:19px 0 40px; border-top:1px solid #ce462e; }
+.etc .sitemap .depth1 > li:nth-child(2n) { margin-left:20px;}
+.etc .sitemap .depth1 > li:nth-child(2n-1) { clear:both; }
+.etc .sitemap .depth1 > li h3 { font-size:16px; font-weight:600; color:#555555; }
+.etc .sitemap .depth1 .depth2 { margin-top:18px; }
+.etc .sitemap .depth1 .depth2 > li { margin-top:13px; }
+.etc .sitemap .depth1 .depth2 > li:first-child { margin-top:0; }
+.etc .sitemap .depth1 .depth2 > li > a { display:inline-block; font-size:14px; font-weight:600; color:#807e7f; }
+.etc .sitemap .depth1 .depth2 .depth3 { margin-top:13px; }
+.etc .sitemap .depth1 .depth2 .depth3 > li { padding-left:10px; margin-top:6px; }
+.etc .sitemap .depth1 .depth2 .depth3 > li:first-child { margin-top:0; }
+.etc .sitemap .depth1 .depth2 .depth3 > li a { display:inline-block; font-size:13px; line-height:18px;}
+
+/* etc */
+.etc .search .bbs_gallery_list .result_list a { padding:27px; }
+.etc .search [class*="bbs_gallery_list"] .result { height:15px; margin-bottom:0; }
+.etc .search .btn_areaAll { margin-top:-17px; padding-bottom:9px; display:block; line-height:15px; text-align:right; }
+.etc .search .btn_areaAll a { position:relative; display:inline-block; font-size:12px; line-height:15px; padding-right:14px; }
+.etc .search .btn_areaAll a:after { content:''; position:absolute; right:0; top:50%; margin-top:-5px; display:block; width:10px; height:10px; background:url('/pjtCom/mobile/images/common/plus.gif') no-repeat 0 0; background-size:10px; }
+.etc .search .block_list ul,
+.etc .search .notice_list ul { margin-top:0; }
