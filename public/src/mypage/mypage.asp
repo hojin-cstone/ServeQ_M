@@ -36,7 +36,30 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 	<main id="wrap" class="<%= path1dir %>">
 		<div id="contents" class="<%= path2dir %>">
 			<div class="<%= path3dir %>">
-				SUB
+				<h2 class="tit">마이페이지</h2>
+				<p class="txt">박보검(parkbogum)님 안녕하세요.</p>
+
+				<div class="cont">
+					<div class="cont_inner">
+						<div class="btn_area">
+							<a href="/mypage/modify.asp" class="btn_org">회원정보수정</a>
+							<a href="/mypage/password_update.asp" class="btn_wht">비밀번호변경</a>
+						</div>
+						<div class="mylink">
+							<dl>
+								<dt>나의 스크랩</dt>
+								<dd><a href="javascript:void(0)">셰프 레시피 (12)</a></dd>
+								<dd><a href="javascript:void(0)">메뉴 원가계산기 (1)</a></dd>
+								<dd><a href="javascript:void(0)">서브큐 매거진 (1)</a></dd>
+							</dl>
+							<dl>
+								<dt>나의 활동</dt>
+								<dd><a href="javascript:void(0)">문의하기 (1)</a></dd>
+								<dd><a href="javascript:void(0)">셰프 1:1 상담 (5)</a></dd>
+							</dl>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</main>

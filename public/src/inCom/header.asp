@@ -62,17 +62,17 @@
 						<a href="#product">상품안내</a>
 
 						<ul id="product" class="depth2">
-							<li><a href="">상품소개</a></li>
-							<li><a href="">서브큐PB상품</a></li>
-							<li><a href="">산지직거래 상품</a></li>
-							<li><a href="">글로벌 구매 네트워크</a></li>
+							<li><a href="/product/about.asp">상품소개</a></li>
+							<li><a href="/product/pb.asp">서브큐PB상품</a></li>
+							<li><a href="/product/direct.asp">산지직거래 상품</a></li>
+							<li><a href="/product/global.asp">글로벌 구매 네트워크</a></li>
 						</ul>
 					</li>
 					<li>
 						<a href="#service">고객지원서비스</a>
 
 						<ul id="service" class="depth2">
-							<li><a href="">고객지원서비스 소개</a></li>
+							<li><a href="/service/about.asp">고객지원서비스 소개</a></li>
 							<li>
 								<a href="#recipe">셰프 레시피</a>
 
@@ -129,9 +129,9 @@
 						<a href="#customer">고객센터</a>
 
 						<ul id="customer" class="depth2">
-							<li><a href="">자주 묻는 질문</a></li>
-							<li><a href="">문의하기</a></li>
-							<li><a href="">오시는 길</a></li>
+							<li><a href="/customer/faq.asp">자주 묻는 질문</a></li>
+							<li><a href="/customer/qna_list.asp">문의하기</a></li>
+							<li><a href="/customer/location.asp">오시는 길</a></li>
 						</ul>
 					</li>
 				</ul>

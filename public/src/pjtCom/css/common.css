@@ -65,8 +65,8 @@ address { font-style:normal; }
 
 /* btn */
 [class^="btn_"]:not(.btn_area) { display:inline-block; box-sizing:border-box; text-align:center; }
-[class^="btn_"]:before,
-[class^="btn_"]:after { content:""; display:inline-block; height:100%; vertical-align:middle; }
+[class^="btn_"]:not(.btn_area):before,
+[class^="btn_"]:not(.btn_area):after { content:""; display:inline-block; height:100%; vertical-align:middle; }
 
 /* select */
 select { width:100%; height:40px; font-size:15px; color:#555; padding:0 10px; line-height:40px; border-radius:0; border:1px solid #e4e4e4; box-sizing:border-box; background:url(/pjtCom/images/common/icon_select.png) no-repeat right center; background-size:20px; -webkit-appearance:none; }

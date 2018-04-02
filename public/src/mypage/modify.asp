@@ -45,7 +45,7 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 							<h2>기본정보</h2>
 							<div class="name_box">
 								<span>이름</span>
-								<span>박보검</span>
+								<input type="text" value="박보검" title="이름 입력" placeholder="이름을 입력해 주세요.">
 								<!--
 									팝업 호출함수 fn.alertOpen('#alert1')
 									#alert1: 수정완료 팝업
