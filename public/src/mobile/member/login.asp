@@ -60,9 +60,9 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 								<label for="save_id">아이디 저장</label>
 
 								<span class="bar"></span>
-								<a href="/member/search_id.asp">아이디 찾기</a>
+								<a href="/mobile/member/search_id.asp">아이디 찾기</a>
 								<span class="bar"></span>
-								<a href="/member/search_pw.asp">비밀번호 찾기</a>
+								<a href="/mobile/member/search_pw.asp">비밀번호 찾기</a>
 							</div>
 
 							<!--
@@ -80,7 +80,7 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 							<p class="txt">SNS 계정을 통해 간편하게 이용하세요</p>
 
 							<div class="btnbox2">
-								<a href="/member/joinuser.asp" class="btn_join">회원가입</a>
+								<a href="/mobile/member/joinuser.asp" class="btn_join">회원가입</a>
 							</div>
 
 							<p class="txt">서브큐 회원가입을 통해 다양한 서비스를 이용해 보세요!</p>

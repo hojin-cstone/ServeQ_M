@@ -151,6 +151,13 @@ switch (path1) {
 
             // 원가계산기
             case 'calculator' :
+                var step_area = new Swiper('.step_area', {
+                    navigation: {
+                        nextEl: '.btn_next',
+                        prevEl: '.btn_prev',
+                      },
+                });
+
                 // 계산기 STEP3 전체선택
                 $('.btn_allchk').click(function(){
                     $('input[type=checkbox]').prop('checked', true);

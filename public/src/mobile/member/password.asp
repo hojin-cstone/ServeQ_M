@@ -79,7 +79,7 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 			<p class="txt">
 				비밀번호가 변경되었습니다.
 			</p>
-			<a href="/member/login.asp" class="btn_ok">확인</a>
+			<a href="/mobile/member/login.asp" class="btn_ok">확인</a>
 		</div>
 	</div>
 

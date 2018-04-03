@@ -121,12 +121,7 @@
 .member .agree .btn_area [class^="btn_"] { width:calc(50% - 2px); height:45px; font-size:16px; }
 .member .agree .btn_join { color:#fff; background:#ce462d; }
 .member .agree .btn_cancel { color:#231f20; margin-left:4px; border:1px solid #231f20; background:#fff; }
-.popup { display:none; position:fixed; left:0; top:0; z-index:100; width:100%; height:100%; box-sizing:border-box; background:rgba(0, 0, 0, 0.7); touch-action:none; }
-.popup .inner { position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); width:calc(100% - 40px); padding:25px 15px 15px; background:#fff; box-sizing:border-box; }
-.popup .tit { font-size:16px; line-height:30px; color:#231f20; }
-.popup .inner .contents { height:240px; font-size:13px; line-height:18px; color:#555; border:1px solid #e4e4e4;  box-sizing:border-box; overflow:hidden;  }
-.popup .inner .contents > div:first-child { padding:20px 15px; }
-.popup .inner .btn_ok { display:block; width:100%; height:39px; font-size:16px; text-align:center; color:#fff; margin:17px auto 0; background:#ce462d; }
+
 
 /* 회원가입 양식 작성 */
 .member .joinform .form_area > div { overflow:hidden; }

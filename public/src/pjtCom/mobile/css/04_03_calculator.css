@@ -131,3 +131,10 @@
 .choose_area .choose_list li .btn_del:after { content:""; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:13px; height:13px; background:url(/pjtCom/mobile/images/sub/btn_calculator_del.png) no-repeat 0 0; background-size:10px; }
 .choose_area.open .choose_list { bottom:44px; }
 .choose_area.open .ea:after { transform:rotate(180deg); }
+
+.popup_info { display:block; visibility:hidden; }
+.popup_info .inner {padding:40px 30px 30px; }
+.popup_info .step_area { overflow:hidden; }
+.popup_info .btn_prev { position:absolute; top:50%; left:0; text-indent:-9999px; transform:translateY(-50%); width:27px; height:45px; background:url(/pjtCom/mobile/images/sub/btn_popupinfo.png) no-repeat 0 0; background-size:27px; }
+.popup_info .btn_next { position:absolute; top:50%; right:0; text-indent:-9999px; transform:translateY(-50%) rotate(180deg); width:27px; height:45px; background:url(/pjtCom/mobile/images/sub/btn_popupinfo.png) no-repeat 0 0; background-size:27px; }
+.popup_info img { width:100%; }

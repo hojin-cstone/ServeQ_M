@@ -40,7 +40,7 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 				<p class="desc">Best Solution을 찾으러 오셨나요? 환영합니다!</p>
 
 				<p class="txt">사용 중인 휴대폰 번호로 가입하실 수 있습니다.</p>
-				<a href="/member/agree.asp" class="btn_join">일반 회원가입</a>
+				<a href="/mobile/member/agree.asp" class="btn_join">일반 회원가입</a>
 
 				<p class="txt naver">네이버 계정으로 간편하게 가입하실 수 있습니다. </p>
 				<button type="button" class="btn_naver">NAVER 로그인</button>

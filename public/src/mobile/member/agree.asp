@@ -73,8 +73,8 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 				-->
 				<div class="btn_area">
 					<a href="#alert1" class="btn_join" onclick="fn.alertOpen('#alert1')">가입하기</a>
-					<!-- <a href="/member/joinform.asp" class="btn_join">가입하기</a> -->
-					<a href="/member/joinuser.asp" class="btn_cancel">취소</a>
+					<!-- <a href="/mobile/member/joinform.asp" class="btn_join">가입하기</a> -->
+					<a href="/mobile/member/joinuser.asp" class="btn_cancel">취소</a>
 				</div>
 			</div>
 		</div>

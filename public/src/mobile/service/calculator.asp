@@ -42,7 +42,7 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 						서브큐의 슬기로운 <b>‘셰프 계산기’</b>
 					</p>
 
-					<a href="#" class="btn_info">이용안내</a>
+					<a href="#popup_info" class="btn_info"  onclick="$('#popup_info').css({'visibility':'visible'});">이용안내</a>
 
 					<img src="/pjtCom/mobile/images/sub/img_service_calculator_intro.jpg" alt="" class="img">
 
@@ -54,6 +54,30 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 		</div>
 	</main>
 	<!-- // wrap -->
+
+	<!-- 이용안내 -->
+	<div id="popup_info" class="popup popup_info">
+		<div class="inner">
+			<button onclick="$('#popup_info').css({'visibility':'hidden'});" type="button" class="btn_close">닫기</button>
+
+			<div class="step_area">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="/pjtCom/mobile/images/sub/img_popupinfo_step1.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="/pjtCom/mobile/images/sub/img_popupinfo_step2.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="/pjtCom/mobile/images/sub/img_popupinfo_step3.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="/pjtCom/mobile/images/sub/img_popupinfo_step4.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="/pjtCom/mobile/images/sub/img_popupinfo_step5.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="/pjtCom/mobile/images/sub/img_popupinfo_step6.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="/pjtCom/mobile/images/sub/img_popupinfo_step7.jpg" alt=""></div>
+					<div class="swiper-slide"><img src="/pjtCom/mobile/images/sub/img_popupinfo_step8.jpg" alt=""></div>
+				</div>
+
+				<button type="button" class="btn_prev">이전</button>
+				<button type="button" class="btn_next">다음</button>
+			</div>
+		</div>
+	</div>
+	<!-- 이용안내 -->
 
 	<!-- footer // -->
 	<!--#include virtual="/mobile/inCom/footer.asp"-->
