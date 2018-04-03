@@ -12,5 +12,6 @@
 .service .form .view_area .img img { width:271px; height:271px; }
 .service .form .view_area .btn_area p { width:219px; height:34px; font-size:13px; text-align:center; line-height:32px; color:#807e7f; margin:0 auto; border:1px solid #e4e4e4; box-sizing:border-box; }
 .service .form .poster .btn_area { font-size:0; padding:0 20px; }
-.service .form .poster .btn_apply { display:inline-block; width:calc(50% - 5px); height:49px; font-size:18px; color:#fff; background:#d3472d; }
-.service .form .poster .btn_list { display:inline-block; width:calc(50% - 5px); height:49px; font-size:18px; color:#231f20; margin-left:10px; border:1px solid #231f20; background:#fff; }
+.service .form .poster .btn_apply { display:block; width:155px; height:44px; font-size:16px; color:#fff; margin:30px auto 50px; background:#ce462e; }
+.service .form .poster .btn_cancel { display:block; width:155px; height:44px; font-size:16px; color:#fff; margin:30px auto 50px; background:#555555; }
+.service .form .poster .btn_list { display:block; width:125px; height:44px; font-size:16px; color:#fff; margin:30px auto 50px;  background:#555; }

@@ -44,12 +44,17 @@
 .pr .event .ing .reply_list li .btn_area button.btn_delete { margin-left:2px; background:#fff; color:#555; border:1px solid #555; vertical-align:middle; }
 .pr .event .ing .reply_list li dl {  margin-bottom:8px; font-size:13px; line-height:15px; }
 .pr .event .ing .reply_list li dl:after { content:''; display:block; clear:both; }
-.pr .event .ing .reply_list li dl dt { float:left; color:#000; padding-right:15px; }
+.pr .event .ing .reply_list li dl dt { float:left; color:#000; padding-right:15px; font-weight:600; }
 .pr .event .ing .reply_list li dl dd { position:relative; float:left; color:#807e7e; padding-left:16px; }
 .pr .event .ing .reply_list li dl dd:before { content:''; position:absolute; left:0px; top:50%; margin-top:-5px; display:block; width:1px; height:10px; background:#bcbcbc; }
 .pr .event .ing .reply_list li.edit_reply { padding-bottom:0; border:none; }
 .pr .event .ing .re_counter { font-size:13px; color:#949494; }
 .pr .event .ing .re_counter b { font-weight:600; color:#656565; }
 .pr .event .ing .no_data { margin-top:24px; }
-.pr .event .ing .btn_ok { width:100%; height:45px; font-size:16px; background:#ce462e; color:#fff; text-align:center; }
 .pr .event .ing .reply_wrap + .btn_list { margin-top:25px; }
+
+.pr .event .ing [class*="bbs_basic_view"] .info_area dt { width:auto; display:inline-block; margin-right:18px; }
+.pr .event .ing .btn_updatearea { position:relative; width:100%; margin-top:8px; }
+.pr .event .ing .btn_updatearea:after { content:''; display:block; clear:both; }
+.pr .event .ing .btn_updatearea .btn_ok { float:left; width:calc(50% - 4px); height:45px; font-size:16px; background:#ce462e; color:#fff; text-align:center; }
+.pr .event .ing .btn_updatearea .btn_cancel { float:left; width:calc(50% - 4px); height:45px; margin-left:8px; font-size:16px; background:#fff; color:#231f20; border:1px solid #231f20; text-align:center; }

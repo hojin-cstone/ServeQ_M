@@ -38,8 +38,19 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 			<div class="<%= path3dir %>">
 
 				<article class="bbs_basic_view view_area">
+					<!-- 상단 타이틀 영역 // -->
+					<div class="info_area">
+						<h3 class="tit">2017 크리스마스 케이크 홍보 포스터</h3>
+
+						<dl>
+							<dt>등록날짜</dt>
+							<dd>2018.02.19</dd>
+						</dl>
+					</div>
+					<!-- // 상단 타이틀 영역 -->
+
 					<!-- // -->
-					<div class="share_function">
+					<div class="share_function mgt60">
 						<!-- SNS // -->
 						<div class="share_area">
 							<span class="hide">SNS 공유하기</span>
@@ -64,19 +75,6 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 						<!-- // 인쇄 & 스크랩 -->
 					</div>
 					<!-- // -->
-
-
-					<!-- 상단 타이틀 영역 // -->
-					<div class="info_area">
-						<h3 class="tit">2017 크리스마스 케이크 홍보 포스터</h3>
-
-						<dl>
-							<dt>등록날짜</dt>
-							<dd>2018.02.19</dd>
-						</dl>
-					</div>
-					<!-- // 상단 타이틀 영역 -->
-
 
 					<!-- 에디터 출력 영역 // -->
 					<div class="edit_area">

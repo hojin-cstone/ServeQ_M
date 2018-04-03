@@ -93,7 +93,8 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 						</p>
 					</div>
 					<!-- // 에디터 출력 영역 -->
-
+					<button type="button" class="btn_apply" onclick="fn.alertOpen('#alert1');">신청하기</button>
+					<button type="button" class="btn_cancel" onclick="fn.alertOpen('#alert2');">취소하기</button>
 
 					<!-- // -->
 					<div class="share_function">
@@ -117,8 +118,7 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 					<!-- // -->
 
 					<div class="btn_area">
-						<button type="button" class="btn_apply" onclick="fn.alertOpen('#apply');">신청</button>
-						<a href="/mobile/service/form_list_poster.asp" class="btn_list">취소</a>
+						<a href="/mobile/service/form_list_poster.asp" class="btn_list">목록</a>
 					</div>
 				</article>
 
@@ -128,11 +128,29 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 	<!-- // wrap -->
 
 	<!-- popup // -->
-	<div id="apply" class="alert">
+	<div id="alert1" class="alert">
 		<div class="inner">
 			<button onclick="fn.alertClose()" type="button" class="btn_close">닫기</button>
 			<p class="txt">
 				신청이 완료되었습니다.
+			</p>
+			<button onclick="fn.alertClose()" type="button" class="btn_ok">확인</button>
+		</div>
+	</div>
+	<div id="alert2" class="alert">
+		<div class="inner">
+			<button onclick="fn.alertClose()" type="button" class="btn_close">닫기</button>
+			<p class="txt">
+				신청이 취소되었습니다.
+			</p>
+			<button onclick="fn.alertClose()" type="button" class="btn_ok">확인</button>
+		</div>
+	</div>
+	<div id="alert3" class="alert">
+		<div class="inner">
+			<button onclick="fn.alertClose()" type="button" class="btn_close">닫기</button>
+			<p class="txt">
+				로그인 후 이용 가능합니다.
 			</p>
 			<button onclick="fn.alertClose()" type="button" class="btn_ok">확인</button>
 		</div>

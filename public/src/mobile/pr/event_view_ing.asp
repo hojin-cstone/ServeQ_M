@@ -47,7 +47,7 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 						<dl>
 							<dt>이벤트 기간</dt>
 							<dd>2017.12.04 ~ 2017.12.20</dd>
-							<dt>신청 기간</dt>
+							<dt>당첨자 발표일</dt>
 							<dd>2018.02.19 ~ 2018.03.02</dd>
 						</dl>
 					</div>
@@ -169,12 +169,22 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 												<textarea title="댓글 입력" placeholder="내용을 입력해 주세요."></textarea>
 												<span class="re_counter"></span>
 											</div>
-											<a href="javascript:void(0)" class="btn_ok">수정하기</a>
+											<div class="btn_updatearea">
+												<button class="btn_ok">수정</button>
+												<a href="javascript:void(0)" class="btn_cancel">수정취소</a>
+											</div>
 										</div>
 									</fieldset>
 								</form>
 							</li>
 							<!-- // 댓글 수정하기 -->
+							<li>
+								<dl>
+									<dt>septemb**</dt>
+									<dd>2017.12.15</dd>
+								</dl>
+								<p>당첨 됐으면 좋겠어요!!</p>
+							</li>
 						</ul>
 					</div>
 					<!-- // 댓글 -->
