@@ -48,7 +48,7 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 							<dt>이벤트 기간</dt>
 							<dd>2017.12.04 ~ 2017.12.20</dd>
 							<dt>당첨자 발표일</dt>
-							<dd>2018.02.19 ~ 2018.03.02</dd>
+							<dd>2017.12.20</dd>
 						</dl>
 					</div>
 					<!-- // 상단 타이틀 영역 -->
