@@ -52,6 +52,7 @@
 .pr .event .ing .re_counter b { font-weight:600; color:#656565; }
 .pr .event .ing .no_data { margin-top:24px; }
 .pr .event .ing .reply_wrap + .btn_list { margin-top:25px; }
+.pr .event .ing .reply_input .btn_ok { width:100%; height:45px; font-size:16px; background:#ce462e; color:#fff; text-align:center; }
 
 .pr .event .ing [class*="bbs_basic_view"] .info_area dt { width:auto; display:inline-block; margin-right:18px; }
 .pr .event .ing .btn_updatearea { position:relative; width:100%; margin-top:8px; }
