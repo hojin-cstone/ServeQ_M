@@ -45,6 +45,10 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 					<li>가입완료</li>
 				</ol>
 				<div class="form_area">
+					<div>
+						<b>기본정보</b>
+						<strong>모든 항목은 필수로 입력해 주세요.</strong>
+					</div>
 					<form>
 						<fieldset>
 							<legend class="hide">회원가입</legend>
