@@ -36,8 +36,27 @@ If path3tit = "" Then description=description+path2tit Else description=descript
 
 				<div class="visual_area">
 					<div class="inner swiper-wrapper">
-						<div class="swiper-slide"><img src="/pjtCom/mobile/images/main/img_visual1.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="/pjtCom/mobile/images/main/img_visual1.jpg" alt=""></div>
+						<div class="swiper-slide">
+							<img src="/pjtCom/mobile/images/main/img_visual1.jpg" alt="">
+							<span class="txt">
+								식자재 유통의<br />
+								베스트 솔루션
+							</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="/pjtCom/mobile/images/main/img_visual2.jpg" alt="">
+							<span class="txt">
+								신선하고 차별화된<br />
+								식자재 Provider
+							</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="/pjtCom/mobile/images/main/img_visual3.jpg" alt="">
+							<span class="txt">
+								고객의 성공을 위해<br />
+								함께 하는 파트너
+							</span>
+						</div>
 					</div>
 
 					<div class="swiper-pagination"></div>
