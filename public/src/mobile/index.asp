@@ -114,7 +114,7 @@ If path3tit = "" Then description=description+path2tit Else description=descript
 						</li>
 						<li>
 							<a href="/infra/plaza.asp">
-								<b>셰프 플라자</b>
+								<b>물류 시스템</b>
 								<img src="/pjtCom/mobile/images/main/img_infra_plaza.jpg" alt="">
 							</a>
 						</li>
@@ -209,7 +209,7 @@ If path3tit = "" Then description=description+path2tit Else description=descript
 										<!-- <small class="category baking">제과제빵</small> -->
 										<small class="category chinese">중식</small>
 										<p class="name">철판어향가지</p>
-										<small class="sort">메뉴별 &gt; 식사류</small>
+										<small class="sort">식사류</small>
 									</div>
 									<div class="menu">
 										<a href="#" class="btn_recipe">레시피 <b>자세히 보기</b></a>
@@ -223,7 +223,7 @@ If path3tit = "" Then description=description+path2tit Else description=descript
 										<figure class="img"><img src="/pjtCom/mobile/images/temp/img_main_recipe_460x460.jpg" alt=""></figure>
 										<small class="category western">양식</small>
 										<p class="name">철판어향가지</p>
-										<small class="sort">메뉴별 &gt; 식사류</small>
+										<small class="sort">식사류</small>
 									</div>
 									<div class="menu">
 										<a href="#" class="btn_recipe">레시피 <b>자세히 보기</b></a>
@@ -237,7 +237,7 @@ If path3tit = "" Then description=description+path2tit Else description=descript
 										<figure class="img"><img src="/pjtCom/mobile/images/temp/img_main_recipe_460x460.jpg" alt=""></figure>
 										<small class="category baking">제과제빵</small>
 										<p class="name">철판어향가지</p>
-										<small class="sort">메뉴별 &gt; 식사류</small>
+										<small class="sort">식사류</small>
 									</div>
 									<div class="menu">
 										<a href="#" class="btn_recipe">레시피 <b>자세히 보기</b></a>
@@ -251,7 +251,7 @@ If path3tit = "" Then description=description+path2tit Else description=descript
 										<figure class="img"><img src="/pjtCom/mobile/images/temp/img_main_recipe_460x460.jpg" alt=""></figure>
 										<small class="category baking">제과제빵</small>
 										<p class="name">철판어향가지</p>
-										<small class="sort">메뉴별 &gt; 식사류</small>
+										<small class="sort">식사류</small>
 									</div>
 									<div class="menu">
 										<a href="#" class="btn_recipe">레시피 <b>자세히 보기</b></a>
@@ -265,7 +265,7 @@ If path3tit = "" Then description=description+path2tit Else description=descript
 										<figure class="img"><img src="/pjtCom/mobile/images/temp/img_main_recipe_460x460.jpg" alt=""></figure>
 										<small class="category baking">제과제빵</small>
 										<p class="name">철판어향가지</p>
-										<small class="sort">메뉴별 &gt; 식사류</small>
+										<small class="sort">식사류</small>
 									</div>
 									<div class="menu">
 										<a href="#" class="btn_recipe">레시피 <b>자세히 보기</b></a>
@@ -279,7 +279,7 @@ If path3tit = "" Then description=description+path2tit Else description=descript
 										<figure class="img"><img src="/pjtCom/mobile/images/temp/img_main_recipe_460x460.jpg" alt=""></figure>
 										<small class="category baking">제과제빵</small>
 										<p class="name">철판어향가지</p>
-										<small class="sort">메뉴별 &gt; 식사류</small>
+										<small class="sort">식사류</small>
 									</div>
 									<div class="menu">
 										<a href="#" class="btn_recipe">레시피 <b>자세히 보기</b></a>
