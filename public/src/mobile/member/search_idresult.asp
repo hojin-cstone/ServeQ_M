@@ -44,8 +44,8 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 					<p class="id">Parkbogum</p>
 
 					<div class="btn_area">
-						<a href="/member/login.asp" class="btn_login">로그인하기</a>
-						<a href="/member/search_pw.asp" class="btn_pw">비밀번호 찾기</a>
+						<a href="/mobile/member/login.asp" class="btn_login">로그인하기</a>
+						<a href="/mobile/member/search_pw.asp" class="btn_pw">비밀번호 찾기</a>
 					</div>
 				</div>
 			</div>

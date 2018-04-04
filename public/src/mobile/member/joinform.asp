@@ -194,7 +194,7 @@ If path3tit = "" Then pageTit = path2tit Else pageTit = path3tit End If
 							-->
 							<div class="btn_area">
 								<button type="button" class="btn_join" onclick="member_error('error2'); fn.alertOpen('#alert1');">가입하기</button>
-								<a href="/member/agree.asp" class="btn_cancel">취소</a>
+								<a href="/mobile/member/agree.asp" class="btn_cancel">취소</a>
 							</div>
 
 						</fieldset>

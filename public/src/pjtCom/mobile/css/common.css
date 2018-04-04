@@ -137,6 +137,18 @@ input[type=radio].rdo_type1:checked + label:before { background-position:0 -45px
 .alert .inner .txt .small { display:block; font-size:12px; line-height:20px; color:#807e7f; margin-top:10px; }
 .alert .inner .btn_ok { display:block; width:100%; height:39px; font-size:16px; text-align:center; color:#fff; margin:0 auto; background:#555; }
 
+/* popup */
+.popup { display:none; position:fixed; left:0; top:0; z-index:100; width:100%; height:100%; box-sizing:border-box; background:rgba(0, 0, 0, 0.7); touch-action:none; }
+.popup .inner { position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); width:calc(100% - 40px); padding:25px 15px 15px; background:#fff; box-sizing:border-box; }
+.popup .inner .btn_close { position:absolute; right:0; top:0; width:42px; height:42px; text-indent:-9999px; background:none; }
+.popup .inner .btn_close:before { content:""; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:18px; height:18px; background:url(/pjtCom/mobile/images/common/btn_alert_close.png) no-repeat 0 0; background-size:18px; }
+.popup .tit { font-size:16px; line-height:30px; color:#231f20; }
+.popup .inner .contents { height:240px; font-size:13px; line-height:18px; color:#555; border:1px solid #e4e4e4;  box-sizing:border-box; overflow:hidden;  }
+.popup .inner .contents > div:first-child { padding:20px 15px; }
+.popup .inner .btn_ok { display:block; width:100%; height:39px; font-size:16px; text-align:center; color:#fff; margin:17px auto 0; background:#ce462d; }
+
+
+
 /* paging */
 .paging { font-size:0; text-align:center; }
 .paging a { display:inline-block; vertical-align:middle; }
