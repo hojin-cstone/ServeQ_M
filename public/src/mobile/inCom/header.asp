@@ -138,6 +138,34 @@
 			</nav>
 		</div>
 	</div>
+	<div id="search">
+		<button type="button" name="button" class="btn_close">닫기</button>
+		<div class="inner">
+			<fieldset>
+				<legend>검색</legend>
+				<form>
+					<div class="search_write">
+						<input type="text" class="write_txt" placeholder="발렌타인데이">
+						<button type="submit" class="btn_innersearch">검색</button>
+					</div>
+				</form>
+			</fieldset>
+
+			<div class="recommend">
+				<ul>
+					<li><a href="#">#아침</a></li>
+					<li><a href="#">#바쁠때</a></li>
+					<li><a href="#">#간식</a></li>
+					<li><a href="#">#호밀빵</a></li>
+					<li><a href="#">#호밀빵</a></li>
+					<li><a href="#">#건강</a></li>
+					<li><a href="#">#스모크햄샌드위치</a></li>
+					<li><a href="#">#다이어트</a></li>
+					<li><a href="#">#브런치</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<div class="dimd"></div>
 
 	<%If path1dir <> "member" Then%>

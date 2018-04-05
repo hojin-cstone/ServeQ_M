@@ -11,6 +11,17 @@ $('#footer .family').click(function(){
     $(this).toggleClass('on');
 });
 
+// HEADER 검색
+$('#header .btn_search, #search .btn_close, #search ~ .dimd').click(function(e){
+    e.preventDefault();
+    $('#search').toggleClass('on');
+    if($('#search').hasClass('on')){
+        $('#search').css({'height':$('#search .inner').innerHeight()});
+    }else{
+        $('#search').css({'height':0});
+    }
+});
+
 // 앵커이동 X
 $('a[href="#"]').click(function(e){
     e.preventDefault();
