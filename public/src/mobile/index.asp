@@ -103,7 +103,7 @@ If path3tit = "" Then description=description+path2tit Else description=descript
 								<img src="/pjtCom/mobile/images/main/img_product_bakery.jpg" alt="">
 								<div class="txt_area">
 									<b>냉동 베이커리</b>
-									<p>간편하고 편리한<br>냉동생지를 제공합니다.</p>
+									<p>간편하고 편리한<br>냉동 베이커리를 제공합니다.</p>
 								</div>
 							</a>
 						</li>
@@ -120,6 +120,12 @@ If path3tit = "" Then description=description+path2tit Else description=descript
 
 					<ul class="infra_list">
 						<li>
+							<a href="/infra/plaza.asp">
+								<b>물류 시스템</b>
+								<img src="/pjtCom/mobile/images/main/img_infra_plaza.jpg" alt="">
+							</a>
+						</li>
+						<li>
 							<a href="/infra/lab.asp">
 								<b>식품연구소</b>
 								<img src="/pjtCom/mobile/images/main/img_infra_lab.jpg" alt="">
@@ -129,12 +135,6 @@ If path3tit = "" Then description=description+path2tit Else description=descript
 							<a href="/infra/safety.asp">
 								<b>식품안전센터</b>
 								<img src="/pjtCom/mobile/images/main/img_infra_safety.jpg" alt="">
-							</a>
-						</li>
-						<li>
-							<a href="/infra/plaza.asp">
-								<b>물류 시스템</b>
-								<img src="/pjtCom/mobile/images/main/img_infra_plaza.jpg" alt="">
 							</a>
 						</li>
 					</ul>
