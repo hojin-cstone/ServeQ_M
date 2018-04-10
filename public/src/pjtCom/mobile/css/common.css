@@ -371,6 +371,8 @@ input[type=radio].rdo_type1:checked + label:before { background-position:0 -45px
 #menu .gnb .depth1 > li:first-child { border-top:none; }
 #menu .gnb .depth1 > li:last-child { border-bottom:1px solid #e5e5e5; }
 #menu .gnb .depth1 > li > a:after { content:""; position:absolute; top:50%; right:20px; transform:translateY(-50%); width:14px; height:14px; background:url(/pjtCom/mobile/images/common/icon_header.png) no-repeat 0 -36px; background-size:100px; }
+#menu .gnb .depth1 > li > a.directlink:before,
+#menu .gnb .depth1 > li > a.directlink:after { display:none; }
 #menu .gnb .depth1 > li > a:before { content:""; position:absolute; top:50%; right:20px; transform:translateY(-50%) rotate(90deg); transition-duration:0.3s; width:14px; height:14px; background:url(/pjtCom/mobile/images/common/icon_header.png) no-repeat 0 -36px; background-size:100px; }
 #menu .gnb .depth2 { transition-duration:0.5s; height:0; background:#f6f6f6; overflow:hidden; }
 #menu .gnb .depth2 > li > a[href^="#"]:after { content:""; position:absolute; top:50%; right:20px; transform:translateY(-50%); width:8px; height:14px; background:url(/pjtCom/mobile/images/common/icon_header.png) no-repeat -16px -36px; background-size:100px; }

@@ -49,18 +49,20 @@ $('#menu + .dimd, .btn_close').click(function(){
 });
 
 $('#menu .depth1 > li > a').click(function(e){
-	e.preventDefault();
-	if (!$(this).next('.depth2').hasClass('open')) {
-		var depth2Len = $(this).next('.depth2').children('li').length,
-			depth2H = $(this).next('.depth2').children('li').height();
-        $('#menu .depth1 > li > a').removeClass('open');
-        $('#menu .depth1 > li > a').next('.depth2').removeClass('open').css({'height':'0'});
-		$(this).addClass('open');
-		$(this).next('.depth2').addClass('open').css({'height':depth2Len*depth2H});
-	} else {
-		$(this).removeClass('open');
-		$(this).next('.depth2').removeClass('open').css({'height':'0'});
-	}
+    if(!$(this).hasClass('directlink')){
+        e.preventDefault();
+        if (!$(this).next('.depth2').hasClass('open')) {
+    		var depth2Len = $(this).next('.depth2').children('li').length,
+    			depth2H = $(this).next('.depth2').children('li').height();
+            $('#menu .depth1 > li > a').removeClass('open');
+            $('#menu .depth1 > li > a').next('.depth2').removeClass('open').css({'height':'0'});
+    		$(this).addClass('open');
+    		$(this).next('.depth2').addClass('open').css({'height':depth2Len*depth2H});
+    	} else {
+    		$(this).removeClass('open');
+    		$(this).next('.depth2').removeClass('open').css({'height':'0'});
+    	}
+    }
 });
 
 $('#menu .depth2 > li > a[href^="#"]').click(function(e){

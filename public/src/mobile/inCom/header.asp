@@ -48,8 +48,8 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#infra">인프라</a>
-
+						<a href="/mobile/infra/lab.asp" class="directlink">인프라</a>
+						<!--
 						<ul id="infra" class="depth2">
 							<li><a href="/mobile/infra/lab.asp">식품연구소</a></li>
 							<li><a href="/mobile/infra/safety.asp">식품안전센터</a></li>
@@ -57,16 +57,18 @@
 							<li><a href="/mobile/infra/distribute.asp">물류시스템</a></li>
 							<li><a href="/mobile/infra/oms.asp">OMS시스템</a></li>
 						</ul>
+						-->
 					</li>
 					<li>
-						<a href="#product">상품안내</a>
-
+						<a href="/mobile/product/about.asp" class="directlink">상품안내</a>
+						<!--
 						<ul id="product" class="depth2">
 							<li><a href="/mobile/product/about.asp">상품소개</a></li>
 							<li><a href="/mobile/product/pb.asp">서브큐PB상품</a></li>
 							<li><a href="/mobile/product/direct.asp">산지직거래 상품</a></li>
 							<li><a href="/mobile/product/global.asp">글로벌 구매 네트워크</a></li>
 						</ul>
+						-->
 					</li>
 					<li>
 						<a href="#service">고객지원서비스</a>
